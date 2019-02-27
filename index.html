@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Max Woman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link href="lightbox-gallery/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/burger-style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row header__wrapper">
+                <nav id="slide-out" class="side-nav">
+                    <ul>
+                        <li><a href="#">Журнал</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Войти</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-lg-5 hide-block">
+                    <ul class="header__list header__left-list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Журнал</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Новости</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Мероприятия</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-xs-8 col-sm-10 col-lg-3 col-xl-2">
+                    <a href="#" class="header__logo">
+                        <img src="img/header-logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <nav class="col-lg-4 col-xl-5 hide-block">
+                    <ul class="header__list header__right-list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Войти</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="col-xs-4 col-sm-2 header__burger">
+                    <div class="wrapp">
+                        <button class="toggle-hamburger toggle-hamburger__animx" id="foo">
+                            <span>menu toggle</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container-fluid new-width">
+
+            <div class="row">
+                <div class="col-12 btn_back">
+                    <a href="#">
+                        <div class="arrow"></div>
+                        <span>Вернуться к поику</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="master-block user">
+                        <img src="img/user_photo.png" class="user_photo" alt="фото мастера">
+                        <div class="user_state">
+                            <img src="img/img_1.png" alt="Статус пользователя">
+                        </div>
+                    </div>
+                    <div class="master-block user_phone">
+                        <div class="phone">
+                            <p>Телефон:</p>
+                            <div class="phone__number">+38 063 555 55 55</div>
+                        </div>
+                        <div class="messenger">
+                            <p>Месенджеры:</p>
+                            <div class="messenger__block viber">
+                                <div class="icon_img"></div>
+                                +38 063 555 55 55
+                            </div>
+                            <div class="messenger__block telegram">
+                                <div class="icon_img"></div>
+                                +38 063 555 55 55
+                            </div>
+                        </div>
+                    </div>
+                    <div class="master-block master-block-social">
+                        <p>Мастер в соц сетях:</p>
+                        <div class="messenger__block insta">
+                            <a href="#">
+                                <img src="img/insta_icon.png" alt="insta_icon">
+                            </a>
+                            <a href="#">Instagramm</a>
+                        </div>
+                        <div class="messenger__block facebook">
+                            <a href="#">
+                                <img src="img/facebook_icon.png" alt="facebook_icon">
+                            </a>
+                            <a href="#">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="user_name">
+                        <h2>Гагарина Елена</h2>
+                        <span>Висажист, парикмахер</span>
+                    </div>
+                    <div id="tabs">
+                        <ul class="tablist">
+                            <li class="tab-link current" data-tab="tab-1">Портфолио</li>
+                            <li class="tab-link" data-tab="tab-2">Отзывы (<span>0</span>)</li>
+                            <li class="tab-link" data-tab="tab-3">Блог</li>
+                            <li class="tab-link" data-tab="tab-4">О себе</li>
+                        </ul>
+                        <div id="tab-1" class="tab-content current">
+                            <div class="block-price"> 
+                                <div class="block-price__item">
+                                    <p class="block-price__upper">Визаж</p>
+                                    <p class="block-price__upper">Цена, UAH</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Мужская</p>
+                                    <p>400</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Женская</p>
+                                    <p>700</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Меллирование</p>
+                                    <p>350</p>
+                                </div>
+                            </div>
+
+                            <div class="block-price"> 
+                                <div class="block-price__item">
+                                    <p class="block-price__upper">Парикмахерские услуги:</p>
+                                    <p class="block-price__upper">Цена, UAH</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Мужская</p>
+                                    <p>400</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Женская</p>
+                                    <p>700</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Меллирование</p>
+                                    <p>350</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Укладка</p>
+                                    <p>300-900</p>
+                                </div>
+                                <div class="block-price__item">
+                                    <p>Стрижка челки</p>
+                                    <p>400</p>
+                                </div>
+                            </div>
+
+                            <nav class="gallery">
+                                <h2>Фото работ:</h2>
+                                <div class="row gallery__imges">
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt=""/></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test2_big.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
+                                    <div class="col-lg-4 col-md-6"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div id="tab-2" class="tab-content"></div>
+                        <div id="tab-3" class="tab-content">
+                            <div class="block-price">
+                                <a href="#" class="news">
+                                    <img class="news__photo" src="img/img_news.png" alt="news photo">
+                                    <span class="test">
+                                        <p>Елена Гагарина</p>
+                                        <div class="text_bold">Как сохранить ногти молодыми и не
+                                            пожалеть об этом в 50 лет.
+                                        </div>
+                                        <div class="news__wrap">    
+                                            <div>
+                                                <div class="news__viewing">
+                                                    <img src="img/view.png" alt="">
+                                                    <span>130</span>
+                                                </div>
+                                                <div class="news__viewing">
+                                                    <img src="img/comment.png" style="width: 20px;" alt="">
+                                                    <span>12</span>
+                                                </div>
+                                            </div>
+                                            <p>12 Июня</p>
+                                        </div>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="block-price">
+                                <a href="#" class="news">
+                                    <img class="news__photo" src="img/img_news.png" alt="news photo">
+                                    <span class="test">
+                                        <p>Елена Гагарина</p>
+                                        <div class="text_bold">Как сохранить ногти молодыми и не
+                                            пожалеть об этом в 50 лет.
+                                        </div>
+                                        <div class="news__wrap">    
+                                            <div>
+                                                <div class="news__viewing">
+                                                    <img src="img/view.png" alt="">
+                                                    <span>130</span>
+                                                </div>
+                                                <div class="news__viewing">
+                                                    <img src="img/comment.png" style="width: 20px;" alt="">
+                                                    <span>12</span>
+                                                </div>
+                                            </div>
+                                            <p>12 Июня</p>
+                                        </div>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-content">
+                            <div class="block-price">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="master-block">
+                        <div class="city">
+                            <p>Днепр</p>
+                            <span>Центральный район</span>
+                        </div>
+                        <div class="map">
+                            <p>Мастер на карте:</p>
+                            <div class="map__block">
+                                <img src="img/map.png" alt="map">
+                            </div>
+                            <a href="#">Проложить маршрут</a>
+                        </div>
+                    </div>
+                    <div class="add-master">
+                        <a href="#">Добавить мастера в избранное</a>
+                    </div>
+                    <div class="master-block">
+                        <p>Мастер рекомендует:</p>
+                        <a href="#" class="master-block__link">
+                            <div class="master-block__recommend">
+                                <div class="circle-img">
+                                    <img src="img/circle_photo.png" alt="фото мастера">
+                                </div>
+                                <p>Ирина Бойко</p>
+                                <span>Висажист, стилист</span>
+                            </div>
+                        </a>
+                        <a href="#" class="master-block__link">
+                            <div class="master-block__recommend">
+                                <div class="circle-img">
+                                    <img src="img/circle_photo.png" alt="фото мастера">
+                                </div>
+                                <div>
+                                <p>Анастасия Емельянова</p>
+                                <span>Парикмахер</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row footer__wrapper">
+                <div class="col-xs-6 col-md-3">
+                    <p>Подписаться:</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"><img src="img/insta_icon.png" class="footer__icon" alt="Instagramm">Instagramm</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"><img src="img/facebook_icon.png" class="footer__icon" alt="Facebook">Facebook</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"><img src="img/footer_youtube.png" class="footer__icon" alt="Youtube">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <p>Связаться:</p>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"><img src="img/footer_phone.png" class="footer__icon" alt="Phone">099 555 55 55</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"><img src="img/footer_telegram.png" class="footer__icon" alt="Telegram">Telegram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="footer__block-search">
+                        <a href="#" class="footer__button-search">
+                            Найти мастера за 1 минуту 
+                        </a>
+                        <a href="#" class="footer__info-search">
+                            <img src="img/info.png" alt="">
+                            <span class="footer__info-text">Подробнее об этом?</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-line">Все права защищены. 2011 - 2019</div>
+    </footer>
+    </div>
+    <script src="js/burger.js"></script>
+    <script src="lightbox-gallery/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/lightbox-gallery.config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
