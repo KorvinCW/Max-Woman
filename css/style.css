@@ -277,6 +277,7 @@ body {
 .gallery__imges__img {
     max-width: 100%;
     margin-top: 30px;
+    border-radius: 3px;
 }
 
 /*--------------------blog---------------------*/
@@ -562,11 +563,11 @@ body {
     }
 }
 
-/* @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     .container {
         max-width: 576px;
     }
-} */
+}
 
 @media screen and (max-width: 410px){
     .side-nav {
@@ -876,7 +877,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 }
 
 .found-masters__bottom-desc {
-    margin-top: 50px;
+    margin-top: 75px;
     padding: 0 40px;
 }
 
