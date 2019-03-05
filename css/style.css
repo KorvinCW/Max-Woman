@@ -20,6 +20,7 @@ body {
 }
 
 body {
+    font-family: Montserrat,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-size: 16px;
     background-color: #e5e5e5;
 }
@@ -624,7 +625,7 @@ body {
     background-color: white;
 }
 
-.custom-select {
+.master-search-select {
     width: 80%;
     padding: 10px 15px;
     margin-bottom: 20px;
@@ -742,11 +743,11 @@ body {
     transform: scale(0);
 }
 
-input[type="radio"] {
+.wrap-search__input {
     display: none;
 }
   
-input[type="radio"]:checked ~ label::after {
+.wrap-search__input:checked ~ label::after {
     transform: scale(1.1);
 }
 
@@ -986,10 +987,404 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 /*----------------------main-page------------------*/
 
 .main-page_bg {
+    background-color: white;
+}
+
+.main-page_img { 
+    background: url('../img/main_bg.png') center no-repeat;
+}
+
+.main-page__title-wrap {
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+
+.main-page__title {
+    margin: 0 auto;
+    padding-top: 185px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.main-page__title h1 {
+    font-size: 55px;
+    font-weight: normal;
+    word-spacing: 5px;
+}
+
+.main-page__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+    padding: 50px;
+    background: rgb(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+.main-page-select {
+    width: 250px;
+    margin-right: 50px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.main-page__buton-send {
+    padding: 10px 60px;
+    background: #ED4A43;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.main-page__buton-send:link,
+.main-page__buton-send:visited,
+.main-page__buton-send:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------advantages---------------- */
+
+.main-page__article {
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: 300;
+}
+
+.main-page__article-number {
+    font-size: 89px;
+    font-weight: 400;
+}
+
+.main-page__article-text {
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.main-page__article-title {
+    font-size: 34px;
+}
+
+.main-page__article-color {
+    color: #F64C45;
+}
+
+.main-page__advantages-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+
+.main-page__advantages-desc {
+    width: 250px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.main-page__advantages-number {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.main-page__advantages-des span {
+    text-transform: lowercase;
+}
+
+.advantages__big-text {
+    text-transform: inherit;
+}
+
+/*--------------------offer-block------------------*/
+
+.main-page__offer {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.main-page__offer-title {
+    margin-bottom: 80px;
+    font-size: 34px;
+}
+
+.main-page__offer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-page__offer_wr-height {
+    min-height: 700px;
+}
+
+.main-page__offer-block {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 55px;
+    background: #F8F8F8;
+    text-transform: uppercase;
+}
+
+.main-page__offer-block:first-child {
+    margin-right: 10px;
+}
+
+.main-page__offer-desc {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    font-size: 21px;
+}
+
+.main-page__offer-button {
+    display: block;
+    padding: 20px;
+    font-size: 21px;
+    background: white;
+    color: #ED4A43;
+    border: 1px solid #FBFBFB;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.main-page__offer-button:link,
+.main-page__offer-button:visited,
+.main-page__offer-button:hover {
+    text-decoration: none;
+    background: white;
+    color: #ED4A43;
+}
+
+/*-----------------------logo-block-------------------*/
+
+.main-page__logo-block {
+    margin: 200px 0;
+    text-align: center;
+}
+
+.main-page__logo-block > img {
+    max-width: 100%;
+}
+
+.main-page__logo-text {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.main-page__help-search {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 100px;
+    background: #F8F8F8;
+}
+
+/*-------------------registration-block---------------*/
+
+.main-page__registration-block {
+    padding: 80px;
+    background: url('../img/registration_bg.png') center no-repeat;
+    text-align: center;
+}
+
+.main-page__registration-title {
+    margin-bottom: 60px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.main-page__registration-form {
+    max-width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 135px;
     background: white;
 }
 
-.main-page_background {
-    height: 1129px;
-    background: url('../img/main_bg.png') 100% 100% no-repeat;
+/*-------------------registration-form---------------*/
+
+/*-------------------radio-style---------------*/
+
+.main-page__form-wrap {
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main-page__form-wrap > div {
+    padding: 14px 44px;
+}
+
+.main-page__form-wrap > div:last-child {
+    padding-right: 0;
+}
+
+
+.main-page__reg-label {
+    position: relative;
+    cursor: pointer;
+}
+
+.main-page__reg-label::before,
+.main-page__reg-label::after {
+    position: absolute;
+    top: 0;
+    left: -42px;
+    border-radius: 50%;
+    content: "";
+}
+
+.main-page__reg-label::before {
+    width: 20px;
+    height: 20px;
+    border: solid 2px #5a5a5a;
+}
+
+.main-page__reg-label::after {
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: -37px;
+    background-color: #ED4A43;
+    transition-duration: 0.28s;
+    transition-property: transform;
+    transform: scale(0);
+}
+
+.main-page__reg-input {
+    display: none;
+}
+
+.main-page__reg-input:checked ~ .main-page__reg-label::after {
+    transform: scale(1.1);
+}
+
+/*------------------------end radio-style---------------------*/
+
+.main-page__form-common {
+    width: 280px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+}
+
+.main-page__form-text,
+.main-page__form-tel {
+    border: 1px solid rgba(0,0,0,.15);
+}
+
+.main-page__form-select {
+    border-radius: 0;
+}
+
+.main-page__form-button {
+    position: relative;
+    margin-top: 40px;
+    background: #3ACB7C;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.main-page__form-button:link,
+.main-page__form-button:visited,
+.main-page__form-button:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.main-page__form-button:after {
+    content: url('../img/arrow.png');
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+
+.main-page__form-desc {
+    text-align: center;
+    font-size: 13px;
+}
+
+.main-page__form-bold {
+    font-weight: bold;
+}
+
+/*-------------------media__main-page----------------------*/
+
+@media screen and (max-width: 1250px){
+    .main-page__search {
+        margin: 0;
+        padding: 30px;
+    }
+
+    .main-page__advantages-item {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .main-page__offer-block:first-child {
+        margin-right: 0;
+    }
+
+    .main-page__logo-block {
+        margin-top: 100px;
+    }
+
+    .main-page__help-search {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 982px){
+    .main-page__search {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .main-page-select {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .main-page__registration-block {
+        padding: 80px 0;
+    }
+
+    .main-page__registration-form {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main-page__help-search {
+        padding: 50px 10px;
+    }
+
+    .main-page__article-text,
+    .main-page__registration-title {
+        font-size: 40px;
+    }
+
+    .main-page__title h1 {
+        font-size: 35px;
+    }
+
+    .main-page__offer-block {
+        padding: 50px 10px;
+    }
 }

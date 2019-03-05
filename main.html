@@ -65,10 +65,130 @@
 
     <main class="main main-page_bg">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 main-page_background">
-
+            <div class="main-page__title-wrap  main-page_img">
+                <article class="main-page__title">
+                    <h1>Перый в Украине портал<br>по поиску мастеров красоты</h1>
+                </article>
+                <form class="main-page__search">
+                    <select class="custom-select main-page-select">
+                        <option value="">Ваш город</option>
+                        <option value="">Днепр</option>
+                        <option value="">Киев</option>
+                        <option value="">Харьков</option>
+                    </select>
+                    <select class="custom-select main-page-select">
+                        <option value="">Услуга</option>
+                        <option value="">Стрижка</option>
+                        <option value="">Маникюр</option>
+                        <option value="">Висаж</option>
+                    </select>
+                    <a href="#" class="main-page__buton-send">Найти мастера</a>
+                </form>
+            </div>
+            <div class="main-page__advantages">
+                <article class="main-page__article">
+                    <p class="main-page__article-number">5</p>
+                    <p class="main-page__article-text">Преимуществ</p>
+                    <p class="main-page__article-title"><span class="main-page__article-color">Max</span>Woman.ua</p>
+                </article>
+                <div class="main-page__advantages-item">
+                    <div class="main-page__advantages-desc">
+                        <img src="img/advantage_1.png" alt="img">
+                        <p class="main-page__advantages-number">5000</p>
+                        <span>Проверенных мастеров красоты</span>
+                    </div>
+                    <div class="main-page__advantages-desc">
+                        <img src="img/advantage_2.png" alt="img">
+                        <p class="main-page__advantages-number">3000</p>
+                        <span>Реальныйх отзывов от клиентов</span>
+                    </div>
+                    <div class="main-page__advantages-desc">
+                        <img src="img/advantage_3.png" alt="img">
+                        <p class="main-page__advantages-number">360</p>
+                        <span>готоров на сайте <span class="advantages__big-text">MaxWoman</span></span>
+                    </div>
+                    <div class="main-page__advantages-desc">
+                        <img src="img/advantage_4.png" alt="img">
+                        <p class="main-page__advantages-number">№1</p>
+                        <span>по поиску мастеров красоты</span>
+                    </div>
+                    <div class="main-page__advantages-desc">
+                        <img src="img/advantage_5.png" alt="img">
+                        <p class="main-page__advantages-number">ТОП</p>
+                        <span>В поиске запросов <span class="advantages__big-text">Google</span></span>
+                    </div>
                 </div>
+            </div>
+            <div class="main-page__offer">
+                <p class="main-page__offer-title">Мы предлагаем:</p>
+                <div class="main-page__offer_wr-height">
+                    <div class="main-page__offer-wrap">
+                        <div class="main-page__offer-block">
+                            <h3>Клиенту:</h3>
+                            <div class="main-page__offer-desc">
+                                <p>Проверенные мастера красоты</p>
+                                <p>Реальные отзывы</p>
+                                <p>Быстрый поиск</p>
+                                <p>Поиск по геолокации</p>
+                            </div>
+                            <a href="#" class="main-page__offer-button">Найти мастера</a>
+                        </div>
+                        <div class="main-page__offer-block">
+                            <h3>Мастеру:</h3>
+                            <div class="main-page__offer-desc">
+                                <p>Новые клиенты</p>
+                                <p>Реклама</p>
+                                <p>Продвижения в соцсетях</p>
+                            </div>
+                            <a href="#" class="main-page__offer-button">Создать профиль мастера</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-page__logo-block">
+                <img src="img/big-logo.png" alt="logo">
+                <p class="main-page__logo-text">Первый в Украине портал по поиску мастеров красоты</p>
+                <div class="help-search main-page__help-search">
+                    <a href="#" class="help-search__button">
+                        Найти мастера за 1 минуту 
+                    </a>
+                    <a href="#" class="help-search__info">
+                        <img src="img/info.png" alt="">
+                        <span class="help-search__text">Как это работает?</span>
+                    </a>
+                </div>
+            </div>
+            <div class="main-page__registration-block">
+                <h3 class="main-page__registration-title">Регистрация</h3>
+                <form class="main-page__registration-form">
+                    <div class="main-page__form-wrap">
+                        <div>
+                            <input type="radio" name="choice" id="choice1" class="main-page__reg-input" checked>
+                            <label for="choice1" class="main-page__reg-label">Мастер</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="choice" id="choice2" class="main-page__reg-input">
+                            <label for="choice2" class="main-page__reg-label">Клиент</label>
+                        </div>
+                    </div>
+                    <input type="text" class="main-page__form-text main-page__form-common" required>
+                    <input type="tel" class="main-page__form-tel main-page__form-common" required>
+                    <select class="custom-select main-page__form-select main-page__form-common">
+                        <option value="">Запорожье</option>
+                        <option value="">Кировоград</option>
+                        <option value="">Никополь</option>
+                    </select>
+                    <select class="custom-select main-page__form-select main-page__form-common">
+                        <option value="">Парикмахер</option>
+                        <option value="">Висажист</option>
+                        <option value="">Никополь</option>
+                    </select>
+                    <a href="#" class="main-page__form-button main-page__form-common">Далее</a>
+                    <div class="main-page__form-desc">
+                        <p class="main-page__form-bold">Все поля обязательны</p>
+                        <span>Заполнить профиль, указать все услуги и настроить аккаунт вы сможете после регистрации</span>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
