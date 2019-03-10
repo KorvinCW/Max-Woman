@@ -414,6 +414,10 @@ body {
 
 /* -------------------modal-window---------------- */
 
+.modal {
+    background: rgba(0, 0, 0, 0.75);
+}
+
 .new-modal-content {
     border: none;
     border-radius: 0;
