@@ -412,6 +412,88 @@ body {
     margin-bottom: 10px;
 }
 
+/* -------------------modal-window---------------- */
+
+.new-modal-content {
+    border: none;
+    border-radius: 0;
+}
+
+.new-btn-style {
+    text-decoration: underline;
+}
+
+.new-btn-style:link,
+.new-btn-style:visited,
+.new-btn-style:hover {
+    border: none;
+    outline: none;
+}
+
+.new-modal-title {
+    padding: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: uppercase;
+    background: rgba(245, 245, 245, 0.5);
+}
+
+.new-modal-body {
+    padding: 16px 86px 66px;
+}
+
+.img-modal-body {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.modal-body-text {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.new-modal-footer {
+    padding: 0;
+    align-items: inherit;
+    justify-content: inherit;
+    border-radius: 0;
+}
+
+.new-btn-footer {
+    width: 50%;
+    height: 60px;
+    margin: 0!important;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+
+.new-btn-secondary {
+    background: #C0C0C0;
+}
+
+.new-btn-secondary:link,
+.new-btn-secondary:visited,
+.new-btn-secondary:hover {
+    background: rgb(182, 182, 182);
+    color: white;
+}
+
+.new-btn-primary {
+    background: #3ACB7C;
+}
+
+.new-btn-primary:link,
+.new-btn-primary:visited,
+.new-btn-primary:hover {
+    background: rgb(52, 194, 116);
+    color: white;
+}
+
 /*---------------------footer---------------------*/
 
 .footer {
