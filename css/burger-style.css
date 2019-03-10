@@ -8,7 +8,7 @@
 	margin: 0;
 	padding: 0;
 	width: 86px;
-	height: 96px;
+	height: 86px;
 	font-size: 0;
 	text-indent: -9999px;
 	-webkit-appearance: none;
@@ -86,8 +86,8 @@
 
 .toggle-hamburger.toggle-hamburger__animx.is-active {
 	position: fixed;
-	top: 5px;
-	right: 20px;
+	top: -8px;
+	right: 24px;
 }
 
 .toggle-hamburger.toggle-hamburger__animx.is-active span::before,
