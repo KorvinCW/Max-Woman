@@ -24,6 +24,13 @@ body {
     font-size: 16px;
 }
 
+button:active,
+button:hover,
+button:focus {
+    outline: 0!important;
+    outline-offset: 0!important;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -411,8 +418,101 @@ body {
     text-decoration: underline;
     margin-bottom: 10px;
 }
+/* -------------------route-modal-window---------------- */
 
-/* -------------------modal-window---------------- */
+.modal-dialog-route {
+    max-width: 900px;
+}
+
+.route-modal-content {
+    background-clip: unset;
+    border: none;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.route-modal-header {
+    margin-bottom: 70px;
+    align-items: baseline;
+    border: none;
+}
+
+.route-title {
+    font-size: 2vmax;
+    font-weight: 300;
+    color: white;
+}
+
+.route-close {
+    text-shadow: none;
+    font-size: 1vmax;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.route-close:link,
+.route-close:visited,
+.route-close:hover {
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+.modal-body-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body-left {
+    display: flex;
+    align-items: center;
+}
+
+.modal-body-pad {
+    padding-left: 25px;
+}
+
+.modal-desc-text {
+    padding-right: 25px;
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 0.68;
+}
+
+.modal-input {
+    margin-left: 15px;
+    padding: 7px 25px;
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    background: rgb(24, 24, 24);
+    border: none;
+}
+
+.modal-body-right {
+    font-size: 21px;
+    color: rgb(228, 228, 228);
+}
+
+.modal-body-select {
+    max-width: 190px;
+    padding: 7px 27px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.modal-footer-route {
+    border: none;
+}
+
+.map-route-modal {
+    width: 100%;
+}
+
+/* -------------------geoPosition-modal-window---------------- */
 
 .modal {
     background: rgba(0, 0, 0, 0.75);
@@ -425,11 +525,13 @@ body {
 
 .new-btn-style {
     text-decoration: underline;
+    border: none;
 }
 
 .new-btn-style:link,
 .new-btn-style:visited,
 .new-btn-style:hover {
+    text-decoration: underline;
     border: none;
     outline: none;
 }
@@ -690,6 +792,13 @@ body {
 @media screen and (min-width: 768px){
     .container {
         max-width: 576px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .modal-body-right,
+    .modal-body-select {
+        display: none;
     }
 }
 
