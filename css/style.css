@@ -27,8 +27,8 @@ body {
 button:active,
 button:hover,
 button:focus {
-    outline: 0!important;
-    outline-offset: 0!important;
+    outline: none!important;
+    outline-offset: none!important;
 }
 
 .wrapper {
