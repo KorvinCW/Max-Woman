@@ -24,13 +24,6 @@ body {
     font-size: 16px;
 }
 
-button:active,
-button:hover,
-button:focus {
-    outline: none!important;
-    outline-offset: none!important;
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -349,7 +342,6 @@ button:focus {
     vertical-align: middle;
 }
 
-
 /*-----------------right block---------------------*/
 
 .city {
@@ -418,6 +410,7 @@ button:focus {
     text-decoration: underline;
     margin-bottom: 10px;
 }
+
 /* -------------------route-modal-window---------------- */
 
 .modal-dialog-route {
@@ -667,7 +660,7 @@ button:focus {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/*--------------media-------------*/
+/*--------------media-index-page-------------*/
 
 @media screen and (max-width: 1700px){
     .messenger__block {
@@ -692,7 +685,7 @@ button:focus {
         height: 100px;
     }
 
-    .test {
+    .block-price__news {
         margin-top: 30px;
     }
 }
@@ -845,9 +838,11 @@ button:focus {
     font-size: 21px;
 }
 
-.reset-search {
+#reset-search {
+    display: none;
     font-size: 16px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .wrap-search {
@@ -864,12 +859,13 @@ button:focus {
     font-weight: bold;
 }
 
-.hide-custom-select {
-    display: block;
+#select-district,
+#select-extended-service {
+    display: none;
 }
 
-.wrap-search__block-st {
-    display: block;
+#price {
+    display: none;
 }
 
 .wrap-search__wrap-price {
@@ -887,19 +883,18 @@ button:focus {
     font-weight: bold;
 }
 
-.extended-search {
-    display: none;
-    height: 100px;
+#extended-search {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.extended-search a {
-    color: red;
+    height: 100px;
+    color: #ED4A43;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .wrap-search-checkbox {
+    display: none;
     margin: 1px 0 0 0;
     padding: 15px 25px;
     background-color: white;
@@ -907,8 +902,8 @@ button:focus {
 }
 
 /*-------------------radio--------------------*/
-.wrap-search__distance_hide {
-    display: block;
+#distance-search {
+    display: none;
 }
 
 .wrap-search__distance p {
@@ -1020,6 +1015,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     top: 8px;
     left: 6px;
 }
+
 /* -------------------found-masters--------------------- */
 
 .found-masters {
@@ -1175,7 +1171,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     margin-bottom: 40px;
 }
 
-/* ----------------media------------------ */
+/* ----------------media master-search-page------------------ */
 
 @media screen and (max-width: 1650px){   
     .found-masters__left {
@@ -1215,7 +1211,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 }
 
 @media screen and (max-width: 768px){
-    .wrap-search__block-st {
+    .wrap-search__block-price {
         margin-bottom: 20px;
     }
 }
@@ -1259,6 +1255,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     width: 250px;
     margin-right: 50px;
     padding: 5px 15px;
+    font-weight: 500;
     box-sizing: content-box;
     text-transform: uppercase;
 }
@@ -1349,6 +1346,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 .best-masters__wrap {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
 }
@@ -1362,6 +1360,17 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     margin-right: 20px;
 }
 
+.best-masters__show-map {
+    display: block;
+    cursor: pointer;
+}
+
+.best-masters__hide-map {
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 .best-masters__master-wrap {
     display: flex;
     justify-content: center;
@@ -1372,6 +1381,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     padding: 30px 40px 15px;
     min-width: 280px;
     background: white;
+    color: black;
     margin-right: 50px;
 }
 
@@ -1417,6 +1427,10 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 }
 
 /* ------------------best-masters__slider-------------------- */
+
+.all {
+    display: block;
+}
 
 #slider { /*положение слайдера*/
     position: relative;
@@ -1599,12 +1613,19 @@ label, a {
     color: #ED4A43;
 }
 
-/*-----------------media best-masters__slider------------------*/
+/*--------------------best-masters__hide-search------------------*/
 
-@media screen and (max-width: 1400px){
-    .all {
-        display: none;
-    }
+.best-masters__map-img {
+    max-width: 100%;
+}
+
+.best-masters__search-scale {
+    max-width: 440px;
+    margin: 50px auto 0;
+}
+
+.best-masters__hide-search {
+    display: none;
 }
 
 /*--------------------offer-block------------------*/

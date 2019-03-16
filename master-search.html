@@ -68,51 +68,50 @@
             <div class="row">
                 <div class="col-12 title-master-search">
                     <span>Поиск мастера:</span>
-                    <a href="#" class="reset-search">Сбросить расширенный поиск</a>
+                    <span id="reset-search">Сбросить расширенный поиск</span>
                 </div>
             </div>
             <form>
                 <div class="row wrap-search">
-
                     <div class="col-md-6 col-xl-3">
                         <p>Локация</p>
-                        <select class="custom-select master-search-select">
-                            <option value="">Днепр</option>
-                            <option value="">Киев</option>
-                            <option value="">Харьков</option>
+                        <select id="select-city" class="custom-select master-search-select">
+                            <option value="Днепр">Днепр</option>
+                            <option value="Киев">Киев</option>
+                            <option value="Харьков">Харьков</option>
                         </select>
-                        <select class="custom-select master-search-select hide-custom-select">
-                            <option value="">Днепровски р-н</option>
-                            <option value="">Киевский р-н</option>
-                            <option value="">Харьковский р-н</option>
+                        <select id="select-district" class="custom-select master-search-select">
+                            <option value="Днепровски р-н">Днепровски р-н</option>
+                            <option value="Киевский р-н">Киевский р-н</option>
+                            <option value="Харьковский р-н">Харьковский р-н</option>
                         </select>
                     </div>
                     <div class="col-md-6 col-xl-3">
                         <p>Услуга</p>
-                        <select class="custom-select master-search-select">
-                            <option value="">Маникюр</option>
-                            <option value="">Педикюр</option>
-                            <option value="">Стрижка</option>
+                        <select id="select-service" class="custom-select master-search-select">
+                            <option value="Маникюр">Маникюр</option>
+                            <option value="Педикюр">Педикюр</option>
+                            <option value="Стрижка">Стрижка</option>
                         </select>
-                        <select class="custom-select master-search-select hide-custom-select">
-                            <option value="">Свадебный маникюр</option>
-                            <option value="">Королевский маникюр</option>
-                            <option value="">Королевский маникюр</option>
+                        <select id="select-extended-service" class="custom-select master-search-select">
+                            <option value="Свадебный маникюр">Свадебный маникюр</option>
+                            <option value="Королевский маникюр">Королевский маникюр</option>
+                            <option value="Королевский педикюр">Королевский педикюр</option>
                         </select>
                     </div>
-                    <div class="col-md-6 col-xl-3 wrap-search__block-st">
+                    <div id="price" class="col-md-6 col-xl-3 wrap-search__block-price">
                         <p>Стоимость, UAH:</p>
                         <div class="wrap-search__wrap-price">
                             <span>от</span>
-                            <input type="text" class="wrap-search__price" name="" value="0">
+                            <input type="text" id="min-price" class="wrap-search__price" name="" value="0">
                             <span>до</span>
-                            <input type="text" class="wrap-search__price" name="" value="400">
+                            <input type="text" id="max-price" class="wrap-search__price" name="" value="400">
                         </div>
                     </div>
-                    <div class="col-md-6 offset-xl-3 col-xl-3 extended-search">
-                        <a href="#">Расширенный поиск</a>
+                    <div class="col-md-6 offset-xl-3 col-xl-3" id="extended-search">
+                        Расширенный поиск
                     </div>
-                    <div class="col-md-6 col-xl-3 wrap-search__distance wrap-search__distance_hide">
+                    <div id="distance-search" class="col-md-6 col-xl-3 wrap-search__distance">
                         <p>Расстояние от Вас:</p>
                         <div class="wrap-search__line-throught"></div>
                         <div class="wrap-search__distance-block">                       
@@ -139,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row wrap-search-checkbox">
+                <div id="search-checkbox" class="row wrap-search-checkbox">
                     <div class="col-sm-6 col-md-3">
                         <div>
                             <input type="checkbox" id="answer1">

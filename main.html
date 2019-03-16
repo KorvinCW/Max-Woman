@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row best-masters">
+            <div class="row best-masters best-masters__toogle_bg">
                 <p class="main-page__offer-title">Наши лучшие мастера:</p>
                 <div class="best-masters__wrap">
                     <form class="best-masters__search">
@@ -134,10 +134,11 @@
                             <option value="">2</option>
                         </select>
                     </form>
-                    <a href="#" class="best-masters__on-map">
+                    <div class="best-masters__show-map">
                         <img src="img/map_point.png" class="best-masters__on-map-img" alt="img">
                         <span>Показать на карте</span>
-                    </a>
+                    </div>
+                    <div class="best-masters__hide-map">Закрыть карту</div>
                 </div>
                 <!-- slider -->
                 <div class="all">
@@ -315,7 +316,36 @@
                             <label for="switch3"></label>
                         </div>
                     </article>
-                </div>        
+                </div>
+                <div class="best-masters__hide-search">
+                    <img src="img/main_map.png" alt="img" class="best-masters__map-img">
+                    <div class="best-masters__search-scale wrap-search__distance">
+                        <p>Расстояние от Вас:</p>
+                        <div class="wrap-search__line-throught"></div>
+                        <div class="wrap-search__distance-block">                       
+                            <div>
+                                <input type="radio" name="radius" id="radius1" class="wrap-search__input">
+                                <label for="radius1" class="wrap-search__label search-label">150м</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="radius2" class="wrap-search__input">
+                                <label for="radius2" class="wrap-search__label search-label">300м</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="radius3" class="wrap-search__input">
+                                <label for="radius3" class="wrap-search__label search-label">500м</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="radius4" class="wrap-search__input">
+                                <label for="radius4" class="wrap-search__label search-label-test">1км</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="radius5" class="wrap-search__input" checked>
+                                <label for="radius5" class="wrap-search__label last-search-label">любое</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main-page__offer">
                 <p class="main-page__offer-title">Мы предлагаем:</p>
