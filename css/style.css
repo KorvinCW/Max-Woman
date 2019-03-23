@@ -16,6 +16,7 @@ a:hover {
 
 html,
 body {
+    min-width: 320px;
     height: 100%;
 }
 
@@ -1326,6 +1327,10 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     text-align: center;
 }
 
+.main-page__advantages-desc img {
+    max-height: 90px;
+}
+
 .main-page__advantages-number {
     margin-top: 40px;
     margin-bottom: 0;
@@ -1354,7 +1359,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .best-masters__on-map {
@@ -1368,6 +1373,8 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 
 .best-masters__show-map {
     display: block;
+    text-decoration: underline;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -1909,6 +1916,10 @@ label, a {
     .main-page__registration-form {
         padding: 40px 0;
     }
+
+    .main-page__advantages-item {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1931,6 +1942,11 @@ label, a {
 }
 
 @media screen and (max-width: 450px){
+    .main_new-width,
+    .d-footer {
+        display: none;
+    }
+
     .main-page__advantages {
         padding: 0;
     }
@@ -1938,4 +1954,178 @@ label, a {
     .main-page__advantages-item {
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 360px){
+    .main-page__search {
+        padding: 30px 0;
+    }
+}
+
+
+/*------------------------mobile-version------------------*/
+
+/*------------------m-main-page----------------*/
+
+.m-top_block {
+    min-height: 100%;
+    padding: 0 20px 25px;
+    background-image: url("../img/main_m.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.m-main_title {
+    margin: 225px 0 50px;
+    padding: 0 20px;
+    font-weight: 300;
+    line-height: 23px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.m-main_select {
+    display: inline-block;
+    min-width: 280px;
+    margin-bottom: 16px;
+    font-weight: 300;
+    line-height: normal;
+    border-radius: 0;
+}
+
+.m-main_select option {
+    padding: 8px 12px 8px 28px;
+}
+
+.m-main_send {
+    display: block;
+    min-width: 280px;
+    padding: 7px 60px;
+    background: #ED4A43;
+    color: white;
+    font-weight: bold;
+}
+
+.m-main_coming-masters {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.m-main_coming-masters_text {
+    margin: 60px 0 25px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.m-main_distance-block {
+    padding: 0;
+    background-color: #F8F8F8;
+}
+
+.m-label {
+    font-size: 14px;
+}
+
+.m-main_distance {
+    margin: 20px 0 10px;
+    padding: 0 15px;
+}
+
+.m-main .wrap-search__distance-block {
+    margin-top: 15px;
+}
+
+.m-main .wrap-search__label::before,
+.m-main .wrap-search__label::after {
+    width: 21px;
+    height: 21px;
+    top: -35px;
+}
+
+.m-main_map-block {
+    width: 100%;
+}
+
+.m-main_map-desc {
+    margin: 16px 40px 40px;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.m-footer {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 13px;
+    background: #242627;
+}
+
+.m-find_block {
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.m-find_button {
+    display: block;
+    min-width: 260px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    background: #ED4A43;
+    color: white;
+}
+
+.m-info_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.m-info_text {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.m-contacts_block {
+    padding: 35px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.m-social_icon {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+
+.m-footer_phone {
+    color: inherit;
+}
+
+.m-footer_color-phone {
+    color: white;
+}
+
+.m-footer_phone img {
+    height: 15px;
+    padding-right: 10px;
+}
+
+.m-footer_messenger {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.m-footer_bottom-line {
+    background: #2A2F33;
+}
+
+.m-footer_find-master {
+    display: block;
+    padding: 12px 0;
+    font-size: 16px;
+    background: #ED4A43;
+    color: white;
 }
