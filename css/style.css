@@ -1211,15 +1211,21 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     }
 }
 
+@media screen and (max-width: 768px){
+    .wrap-search__block-price {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 550px){
     .found-masters__left {
         margin-right: 0;
     }
 }
 
-@media screen and (max-width: 768px){
-    .wrap-search__block-price {
-        margin-bottom: 20px;
+@media screen and (max-width: 450px){
+    .index-block {
+        display: none;
     }
 }
 
@@ -2128,4 +2134,107 @@ label, a {
     font-size: 16px;
     background: #ED4A43;
     color: white;
+}
+
+/*------------------m-master-search-page----------------*/
+
+.m-search {
+    background: #F8F8F8;
+    text-align: center;
+}
+
+.m-amount-masters {
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.m-search-tab {
+    padding: 10px 0;
+    background: white;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.m-search-tab ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.m-search-tab li {
+    flex-grow: 1;
+    padding: 4px 0;
+}
+
+.m-search-tab li:first-child {
+    border-right: 1px solid #CFCFCF;
+}
+
+.m-search-tab_active {
+    font-weight: bold;
+    color: #ED4A43;
+}
+
+.m-search-master_block {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-top: 13px;
+    padding: 15px;
+    background: white;
+}
+
+.m-search-master_photo {
+    max-width: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-search_pro-img {
+    max-width: 46px;
+    margin-top: 12px;
+}
+
+.m-search-master_info p {
+    margin-bottom: 2px;
+}
+
+.m-search-master_name {
+    font-size: 13px;
+}
+
+.m-search-master_profession {
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.m-search-master_street {
+    font-size: 11px;
+    text-decoration-line: underline;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.m-search-master_dist-block {
+    margin-top: 10px;
+}
+
+.m-location_img {
+    max-height: 16px;
+    margin-right: 5px;
+}
+
+.m-search-master_distance {
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.m-search-master_feedback {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.m-search_navihator {
+    margin: 60px 0 100px;
 }
