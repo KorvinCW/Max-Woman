@@ -78,10 +78,10 @@ $(document).ready(function() {
 	function resetExtendedSearch() {
 		$('#reset-search').css('display', 'none');
 		$('#extended-search').css('display', 'flex');		
-		$("#select-city").val('Днепр');
-		$("#select-district").val('Днепровски р-н').css('display', 'none');
-		$("#select-service").val('Маникюр');
-		$("#select-extended-service").val('Свадебный маникюр').css('display', 'none');
+		$('#select-city').val('Днепр');
+		$('#select-district').val('Днепровски р-н').css('display', 'none');
+		$('#select-service').val('Маникюр');
+		$('#select-extended-service').val('Свадебный маникюр').css('display', 'none');
 		$('#min-price').val('0');
 		$('#max-price').val('400');
 		$('#price').css('display', 'none');
@@ -90,5 +90,27 @@ $(document).ready(function() {
 		$('#search-checkbox input:checked').prop('checked', false);
 		$('#search-checkbox').css('display', 'none');
 	}
+
+	$('#m-search-active_map').click(activeMapBlock);
+	$('#m-search-active_list').click(activeListBlock);
+
+	function activeMapBlock() {
+		if ($('#m-map_block').css('display') == 'none') {
+			$('#m-map_block').css('display', 'block');
+			$('#m-search-active_map').addClass('m-search-tab_bg');
+			$('#m-search-active_list').removeClass('m-search-tab_bg');
+			$('#m-list_block').css('display', 'none');
+		}
+	}
+
+	function activeListBlock() {
+		if ($('#m-list_block').css('display') == 'none') {
+			$('#m-list_block').css('display', 'block');
+			$('#m-search-active_list').addClass('m-search-tab_bg');
+			$('#m-search-active_map').removeClass('m-search-tab_bg');
+			$('#m-map_block').css('display', 'none');
+		}
+	}
+
 
 });

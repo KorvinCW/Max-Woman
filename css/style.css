@@ -1977,7 +1977,7 @@ label, a {
     min-height: 100%;
     padding: 0 20px 25px;
     background-image: url("../img/main_m.png");
-    background-position: center;
+    background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.3);
@@ -2170,9 +2170,17 @@ label, a {
     border-right: 1px solid #CFCFCF;
 }
 
-.m-search-tab_active {
+.m-search-tab_bg {
     font-weight: bold;
     color: #ED4A43;
+}
+
+#m-list_block {
+    display: block;
+}
+
+#m-map_block {
+    display: none;
 }
 
 .m-search-master_block {
