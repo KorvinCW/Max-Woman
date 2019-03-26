@@ -92,6 +92,7 @@ $(document).ready(function() {
 	}
 
 	$('#m-search-active_map').click(activeMapBlock);
+
 	$('#m-search-active_list').click(activeListBlock);
 
 	function activeMapBlock() {
@@ -112,5 +113,16 @@ $(document).ready(function() {
 		}
 	}
 
+	$('#m-footer_reset-search').click(resetMobileSearch);
+
+	function resetMobileSearch() {		
+		$('#m-select-city').val('Днепр');
+		$('#m-select-district').val('Днепровски р-н');
+		$('#m-select-service').val('Маникюр');
+		$('#m-select-extended-service').val('Свадебный маникюр');
+		$('#min-price').val('0');
+		$('#max-price').val('400');
+		$('#m-search-checkbox input:checked').prop('checked', false);
+	}
 
 });
