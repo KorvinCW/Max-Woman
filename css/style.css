@@ -1923,6 +1923,10 @@ label, a {
 }
 
 @media screen and (max-width: 760px){
+    .main-page__article-text,
+    .main-page__registration-title {
+        font-size: 40px;
+    }
     .main-page__registration-block {
         padding: 80px 0;
     }
@@ -1939,11 +1943,6 @@ label, a {
 @media screen and (max-width: 500px){
     .main-page__help-search {
         padding: 50px 10px;
-    }
-
-    .main-page__article-text,
-    .main-page__registration-title {
-        font-size: 40px;
     }
 
     .main-page__title h1 {
@@ -1978,8 +1977,17 @@ label, a {
 
 
 /*------------------------mobile-version------------------*/
-
+.mobile-version {
+    display: none;
+}
 /*------------------m-main-page----------------*/
+
+@media screen and (max-width: 450px){
+    .mobile-version {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .m-top_block {
     min-height: 100%;
