@@ -125,4 +125,22 @@ $(document).ready(function() {
 		$('#m-search-checkbox input:checked').prop('checked', false);
 	}
 
+	$('.m-tab-link').click(function() {
+		var m_tab_id = $(this).attr('data-tab');
+
+		$('.m-tab-link').removeClass('m-current');
+		$('.m-tab-content').removeClass('current');
+
+		$(this).addClass('m-current');
+		$("#" + m_tab_id).addClass('current');
+	});
+
+	$('#m-about_text-more').click(showMoreText);
+
+	function showMoreText() {
+		$('.m-about_text').addClass('m-about_more-text');
+		$('.m-about_text').removeClass('m-about_text');
+		$('#m-about_text-more').css('display', 'none');
+	}
+
 });
