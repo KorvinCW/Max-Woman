@@ -143,4 +143,15 @@ $(document).ready(function() {
 		$('#m-about_text-more').css('display', 'none');
 	}
 
+	$('#m-show-menu').click(showHeaderMenu);
+	$('#exit-menu').click(hideHeaderMenu);
+	
+	function showHeaderMenu() {
+		$('#m-slide-out').css('left', '0');
+	}
+	
+	function hideHeaderMenu() {
+		$('#m-slide-out').css('left', '-100%');
+	}
+
 });

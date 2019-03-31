@@ -804,7 +804,8 @@ body {
 }
 
 @media screen and (max-width: 450px){
-    .footer {
+    .footer,
+    .header {
         display: none;
     }
 
@@ -815,6 +816,10 @@ body {
     .block-price__item p:last-child {
         flex-basis: 30%;
         text-align: right;
+    }
+
+    .header__wrapper {
+        height: auto;
     }
 }
 
@@ -1986,6 +1991,7 @@ label, a {
     .mobile-version {
         display: flex;
         flex-direction: column;
+        flex: 1 0 auto;
     }
 }
 
@@ -2731,4 +2737,102 @@ label, a {
     padding: 10px 10px 10px 15px;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
+}
+
+/* ---------------------m-logo------------------- */
+
+.m-header_wrapper {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	padding: 0 15px;
+}
+
+.m-show_settings {
+    visibility: visible;
+}
+
+.m-wrapp_slide {
+	height: 100%;
+    min-width: 100%;
+    position: fixed;
+    transition: 1s;
+    z-index: 2;
+    top: 0;
+    left: -100%;
+    overflow-x: scroll;
+    font-weight: 500;
+	text-transform: none;
+	font-weight: normal;
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.left-slide-block {
+	display: flex;
+    flex-direction: column;
+	height: 100%;
+	width: 70%;
+	background: white;
+	text-align: left;
+}
+
+.m-header-menu_slide {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+#exit-menu {
+	width: 30px;
+}
+
+.hidden-elem {
+	width: 20px;
+	height: 20px;
+}
+
+.m-slide-navigation_menu {
+	padding: 0 15px 15px;
+	font-size: 16px;
+}
+
+.m-slide-navigation_menu li {
+	padding-bottom: 15px;
+}
+
+.m-active_section {
+	font-weight: bold;
+}
+
+.m-slide-registration_menu {
+	flex: 1 0 auto;
+	display: flex;
+    align-items: flex-end;
+	padding: 0 15px 30px;
+	background: #FBFBFB;
+	font-size: 13px;
+}
+
+.m-slide-registration_menu li {
+	padding-top: 15px;
+}
+
+.m-slide-footer {
+	flex: 0 0 auto;
+    padding: 15px;
+	text-align: center;
+}
+
+.m-slide-footer a {
+	color: white;
+}
+
+.m-slide-footer_master {
+	background: #ED4A43;
+}
+
+.m-slide-footer_top {
+	background: #3ACB7C;
 }
