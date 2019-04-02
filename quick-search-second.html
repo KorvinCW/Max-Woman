@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Max Woman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="lightbox-gallery/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/burger-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row header__wrapper">
+                <nav id="slide-out" class="side-nav">
+                    <ul>
+                        <li><a href="#">Журнал</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Войти</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-lg-5 hide-block">
+                    <ul class="header__list header__left-list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Журнал</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Новости</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Мероприятия</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-8 col-sm-10 col-lg-3 col-xl-2 header-logo_pad">
+                    <a href="#" class="header__logo">
+                        <img src="img/header-logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <nav class="col-lg-4 col-xl-5 hide-block">
+                    <ul class="header__list header__right-list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Войти</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="col-4 col-sm-2 header__burger">
+                    <div class="wrapp">
+                        <button class="toggle-hamburger toggle-hamburger__animx" id="foo">
+                            <span>menu toggle</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper quick-search_bg-color">
+        <main class="container main-quick-search">
+            <div class="row main-quick-search_wrap">
+                <div class="col-12 main-quick-search_title">Поиск мастера за 1 минуту</div>
+                <form class="col-12 main-quick-search_form">
+                    <input type="text" class="main-quick-search_input" placeholder="Татьяна">
+                    <input type="tel" class="main-quick-search_input" placeholder="+3805555555">
+                    <select class="custom-select main-quick-search_select">
+                        <option value="Запорожье">Запорожье</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Днепр">Днепр</option>
+                    </select>
+                    <select class="custom-select main-quick-search_select">
+                        <option value="Парикмахер">Парикмахер</option>
+                        <option value="Визажист">Визажист</option>
+                        <option value="Стилист">Стилист</option>
+                    </select>
+                </form>
+                <div class="col-12 main-quick-search_btn-wrap">
+                    <a href="#" class="main-quick-search_btn">Оставить заявку</a>
+                </div>
+            </div> 
+            <div class="main-quick-search_footer-text">Укажите ключевые параметры и ждите звонка.</div>
+        </main>
+
+        <main class="main-quick-feedback">
+            <span class="main-quick-feedback_text">Ваша заявка принята, ожидайте звонка.</span>
+            <a href="#" class="main-quick-feedback_btn">Вернуться на главную</a>
+        </main>
+
+        <div class="mobile-version">
+            <div class="m-header_wrapper">		
+                <img src="img/burder.png" id="m-show-menu" alt="img">
+                <a href="#" class="header-logo_pad">
+                    <img src="img/m_logo.png" alt="Логотип">
+                </a>
+                <a href="#">
+                    <img src="img/settings.png" class="m-show_settings" alt="img">
+                </a>
+                <div id="m-slide-out" class="m-wrapp_slide">
+                    <div class="left-slide-block">
+                        <div class="m-header-menu_slide">
+                            <img src="img/delete.png" id="exit-menu">
+                            <img src="img/m_logo.png">
+                            <div class="hidden-elem"></div>
+                        </div>
+                        <nav class="m-slide-navigation_menu">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Журнал</a></li>
+                                <li><a href="#">Мероприятия</a></li>
+                                <li class="m-active_section"><a href="#">Блог и новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="m-slide-registration_menu">
+                            <ul>
+                                <li><a href="#">Мой профиль</a></li>
+                                <li><a href="#">Настройки профиля</a></li>
+                                <li><a href="#">Избранные</a></li>
+                                <li><a href="#">Войти</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="m-slide-footer m-slide-footer_master">
+                            <a href="#">Найти мастера</a>
+                        </div>
+                        <div class="m-slide-footer m-slide-footer_top">
+                            <a href="#">Подняться в топ</a>
+                        </div>
+                    </div>
+                </div>	  
+            </div>
+            <main class="main m-quick-search">
+                <div class="m-quick-search_header">Поиск мастера за 1 минуту</div>
+                <form class="m-quick-search_form">
+                    <input type="text" class="m-quick-search_input" placeholder="Ваше имя">
+                    <input type="tel" class="m-quick-search_input" placeholder="Номер телефона">
+                    <select class="custom-select m-quick-search_select">
+                        <option value="Запорожье">Запорожье</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Днепр">Днепр</option>
+                    </select>
+                    <select class="custom-select m-quick-search_select">
+                        <option value="Парикмахер">Парикмахер</option>
+                        <option value="Визажист">Визажист</option>
+                        <option value="Стилист">Стилист</option>
+                    </select>
+                </form>
+                <div class="m-quick-search_footer-text">Укажите ключевые параметры
+                        и ждите звонка.</div>
+            </main>
+            <footer class="m-footer_advanced-search m-footer_quick-search">
+                <a href="#" class="m-footer_apply-search">Оставить заявку</a>
+            </footer>
+
+
+            <main class="main m-quick-feedback_text">
+                Ваша заявка принята, ожидайте звонка
+            </main>
+            <footer class="m-footer_advanced-search m-footer_quick-feedback">
+                <a href="#" class="m-footer_apply-search">Вернуться на главную</a>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/burger.js"></script>
+    <script src="lightbox-gallery/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/lightbox-gallery.config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
