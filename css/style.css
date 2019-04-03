@@ -31,6 +31,26 @@ body {
     height: 100%;
 }
 
+/*--------------general-styles--------*/
+
+.header__logo {
+    padding: 10px 0 10px;
+    text-align: center;
+}
+
+.header_logo-img {
+    width: 197px;
+}
+
+.m-header_logo-img {
+    width: 125px;
+}
+
+.pro-image {
+    width: 110px;
+    height: 34px;
+}
+
 /*---------------header---------------*/
 
 .header {
@@ -73,15 +93,6 @@ body {
 .header__link:hover {
     border-bottom: 5px solid #ED4A43;
     padding-bottom: 22px;
-}
-
-.header__logo {
-    display: flex;
-    justify-content: center;
-}
-
-.header-logo_pad {
-    padding: 10px 0 10px;
 }
 
 /*----------------slider-menu---------------*/
@@ -155,7 +166,7 @@ body {
 }
 
 .user_state {
-    padding-top: 40px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -178,29 +189,34 @@ body {
     padding-top: 30px;
 }
 
-.messenger__block a {
-    text-decoration: underline;
-}
-
 .icon_img {
     width: 55px;
     height: 55px;
     margin-right: 30px;
     border-radius: 70px;
-    text-align: center;
-    vertical-align: middle;
+    margin-right: 30px;
 }
 
 .viber .icon_img {
-    background: #7D3DAF url(../img/viber_icon.png) 15px 17px no-repeat;
+    background: #7D3DAF url(../img/viber_icon.png) 15px 16px no-repeat;
+    background-size: 24px;
 }
 
 .telegram .icon_img {
-    background: #61A8DE url(../img/telegram_icon.png) 13px 15px no-repeat;
+    background: #61A8DE url(../img/telegram_icon.png) 13px 16px no-repeat;
+    background-size: 27px;
 }
 
 .messenger__block img {
     margin-right: 20px;
+}
+
+.messenger__block span {
+    text-decoration: underline;
+}
+
+.master-block-social_img {
+    width: 26px;
 }
 
 /*----------------main_center----------------*/
@@ -472,6 +488,10 @@ body {
     align-items: center;
 }
 
+.modal-body-left_img {
+    width: 18px;
+}
+
 .modal-body-pad {
     padding-left: 25px;
 }
@@ -555,6 +575,10 @@ body {
     margin-bottom: 30px;
 }
 
+.img-modal-body_width {
+    width: 41px;
+}
+
 .modal-body-text {
     font-size: 16px;
     font-weight: 300;
@@ -613,8 +637,12 @@ body {
     padding: 60px 130px 40px;
 }
 
+.footer__list {
+    margin-top: 40px;
+}
+
 .footer__item {
-    padding-top: 15px;  
+    padding-bottom: 20px;  
 }
 
 .footer__link {
@@ -659,6 +687,10 @@ body {
     align-items: center;
 }
 
+.info-icon_width {
+    width: 18px;
+}
+
 .footer__info-text {
     padding-left: 10px;
 }
@@ -672,7 +704,7 @@ body {
 
 /*--------------media-index-page-------------*/
 
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1727px){
     .messenger__block {
         font-size: 18px;
     }
@@ -700,7 +732,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1525px){
+@media screen and (max-width: 1545px){
     .messenger__block {
         font-size: 14px;
     }
@@ -750,7 +782,7 @@ body {
     }
 
     .header__logo {
-        justify-content: flex-start;
+        text-align: left;
     }
 
     .header__burger {
@@ -792,7 +824,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .container {
         max-width: 576px;
     }
@@ -823,6 +855,10 @@ body {
     .header__wrapper {
         height: auto;
     }
+
+    .icon_img {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 410px){
@@ -842,10 +878,6 @@ body {
 @media screen and (max-width: 360px){
     .messenger__block {
         font-size: 16px;
-    }
-
-    .icon_img {
-        margin-right: 10px;
     }
 }
 
@@ -1389,6 +1421,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 }
 
 .best-masters__on-map-img {
+    width: 26px;
     margin-right: 20px;
 }
 
@@ -1732,7 +1765,7 @@ label, a {
     text-align: center;
 }
 
-.main-page__logo-block > img {
+.main-page_logo-img {
     max-width: 100%;
 }
 
@@ -2370,7 +2403,7 @@ label, a {
     color: white;
 }
 
-.m-footer_phone img {
+.m-footer_phone-img {
     height: 15px;
     padding-right: 10px;
 }
@@ -2458,7 +2491,7 @@ label, a {
 }
 
 .m-search_pro-img {
-    max-width: 46px;
+    width: 46px;
     margin-top: 12px;
 }
 
@@ -2681,7 +2714,7 @@ label, a {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.m-index-master_phone img {
+.m-index-master_img {
     width: 13px;
     margin-right: 5px;
 }
@@ -2752,7 +2785,7 @@ label, a {
     border-radius: 60px;
 }
 
-.m-contacts_fhone-block img {
+.m-contacts_fhone-img {
     height: 24px;
     padding-right: 25px;
 }
@@ -2782,17 +2815,14 @@ label, a {
     background: #2196F3 url(../img/fb_icon.png) 10px 20px no-repeat;
 }
 
-.messenger__block .icon_img {
-    margin-right: 0;
-}
-
 .m-contacts_social-info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .m-contacts_social-item img {
-    height: 26px;
+    width: 26px;
     margin-right: 10px;
 }
 
@@ -2842,6 +2872,7 @@ label, a {
 }
 
 .m-recommend {
+    display: none;
     margin-bottom: 40px;
 }
 
@@ -2974,7 +3005,15 @@ label, a {
     box-sizing: border-box;
 }
 
+.m-map_footer-img {
+    width: 25px;
+}
+
 /* ---------------------m-logo------------------- */
+
+.header-logo_pad {
+    padding: 10px 0;
+}
 
 .m-header_wrapper {
 	display: flex;
@@ -2984,7 +3023,16 @@ label, a {
     background: white;
 }
 
+.m-header_wrapper-img {
+    width: 31px;
+}
+
 .m-show_settings {
+    width: 22px;
+    visibility: hidden;
+}
+
+.visible-block {
     visibility: visible;
 }
 

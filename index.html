@@ -25,7 +25,7 @@
                         <li><a href="#">Регистрация</a></li>
                     </ul>
                 </nav>
-                <nav class="col-lg-5 hide-block">
+                <nav class="col-5 hide-block">
                     <ul class="header__list header__left-list">
                         <li class="header__item">
                             <a href="#" class="header__link">Журнал</a>
@@ -38,12 +38,10 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="col-8 col-sm-10 col-lg-3 col-xl-2 header-logo_pad">
-                    <a href="#" class="header__logo">
-                        <img src="img/header-logo.png" alt="Логотип">
-                    </a>
-                </div>
-                <nav class="col-lg-4 col-xl-5 hide-block">
+                <a href="#" class="col-8 col-sm-10 col-lg-3 col-xl-2 header__logo">
+                    <img src="img/logo.png" class="header_logo-img" alt="Логотип">
+                </a>
+                <nav class="col-4 col-xl-5 hide-block">
                     <ul class="header__list header__right-list">
                         <li class="header__item">
                             <a href="#" class="header__link">Войти</a>
@@ -79,9 +77,9 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="master-block user">
-                        <img src="img/user_photo.png" class="user_photo" alt="фото мастера">
+                        <img src="img/user_photo.png" class="user_photo" alt="Фото мастера">
                         <div class="user_state">
-                            <img src="img/img_1.png" alt="Статус пользователя">
+                            <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
                         </div>
                     </div>
                     <div class="master-block user_phone">
@@ -103,18 +101,14 @@
                     </div>
                     <div class="master-block master-block-social">
                         <p>Мастер в соц сетях:</p>
-                        <div class="messenger__block insta">
-                            <a href="#">
-                                <img src="img/insta_icon.png" alt="insta_icon">
-                            </a>
-                            <a href="#">Instagram</a>
-                        </div>
-                        <div class="messenger__block facebook">
-                            <a href="#">
-                                <img src="img/facebook_icon.png" alt="facebook_icon">
-                            </a>
-                            <a href="#">Facebook</a>
-                        </div>
+                        <a href="#" class="messenger__block instagram">
+                            <img src="img/insta_icon.png" class="master-block-social_img" alt="insta_icon">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="messenger__block facebook">
+                            <img src="img/facebook_icon.png" class="master-block-social_img" alt="facebook_icon">
+                            <span>Facebook</span>
+                        </a>
                     </div>
                 </div>
 
@@ -415,7 +409,7 @@
                                         </div>
                                         <div class="modal-body new-modal-body">
                                             <div class="img-modal-body">
-                                                <img src="img/modal_map_point.png" alt="img">
+                                                <img src="img/map_point_red.png" class="img-modal-body_width" alt="img">
                                             </div>
                                             <div class="modal-body-text">
                                                 <span>Включите определение геопозиции, чтобы можно было увидеть мастеров поблизости и проложить к ним маршрут</span>
@@ -447,7 +441,7 @@
                                             <div class="modal-body-block">
                                                 <div class="modal-body-left modal-body-pad">
                                                     <span class="modal-desc-text">Ваш адрес</span>
-                                                    <img src="img/small_point.png" alt="img">
+                                                    <img src="img/map_point_red.png" class="modal-body-left_img" alt="img">
                                                     <input type="text" class="modal-input">
                                                 </div>
                                                 <div class="modal-body-right">27 минут</div>
@@ -457,7 +451,7 @@
                                             <div class="modal-body-block">
                                                 <div class="modal-body-left">
                                                     <span class="modal-desc-text">Адрес мастера</span>
-                                                    <img src="img/small_point_master.png" alt="img">
+                                                    <img src="img/map_point_blue.png" class="modal-body-left_img" alt="img">
                                                     <input type="text" class="modal-input">
                                                 </div>
                                                 <select class="custom-select modal-body-select">
@@ -526,9 +520,9 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <p>Связаться:</p>
-                    <ul>
+                    <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/footer_phone.png" class="footer__icon" alt="Phone">099 555 55 55</a>
+                            <a href="#" class="footer__link"><img src="img/phone_icon.png" class="footer__icon" alt="Phone">099 555 55 55</a>
                         </li>
                         <li class="footer__item">
                             <a href="#" class="footer__link"><img src="img/footer_telegram.png" class="footer__icon" alt="Telegram">Telegram</a>
@@ -541,7 +535,7 @@
                             Найти мастера за 1 минуту 
                         </a>
                         <a href="#" class="footer__info-search">
-                            <img src="img/info.png" alt="">
+                            <img src="img/info.png" class="info-icon_width" alt="info_img">
                             <span class="footer__info-text">Подробнее об этом?</span>
                         </a>
                     </div>
@@ -553,9 +547,9 @@
 
     <div class="mobile-version">
         <div class="m-header_wrapper">		
-            <img src="img/burder.png" id="m-show-menu" alt="img">
+            <img src="img/burger.png" id="m-show-menu" class="m-header_wrapper-img" alt="img">
             <a href="#" class="header-logo_pad">
-                <img src="img/m_logo.png" alt="Логотип">
+                <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
             </a>
             <a href="#">
                 <img src="img/settings.png" class="m-show_settings" alt="img">
@@ -564,7 +558,7 @@
                 <div class="left-slide-block">
                     <div class="m-header-menu_slide">
                         <img src="img/delete.png" id="exit-menu">
-                        <img src="img/m_logo.png">
+                        <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
                         <div class="hidden-elem"></div>
                     </div>
                     <nav class="m-slide-navigation_menu">
@@ -622,17 +616,17 @@
                     <div class="m-search-master_block">
                         <div class="m-search-master_photo">
                             <img src="img/circle_photo.png" alt="img">
-                            <img src="img/m-pro.png" class="m-search_pro-img" alt="img">
+                            <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
                         </div>
                         <div class="m-index-master_info">
                             <p class="m-search-master_profession">Визажист, парикмахер</p>
-                            <a href="#" class="m-index-master_street">ул. Ширшова, 15</a>
+                            <span class="m-index-master_street">ул. Ширшова, 15</span>
                             <div class="m-index-master_phone">
-                                <img src="img/footer_phone.png" alt="img">
+                                <img src="img/phone_icon.png" class="m-index-master_img" alt="img">
                                 <p><span>099 555 55 55</span> ; <span>067 555 55 55</span></p>
                             </div>
                             <div class="m-search-master_dist-block">
-                                <img src="img/blue_location.png" class="m-location_img" alt="img">
+                                <img src="img/map_point_blue.png" class="m-location_img" alt="img">
                                 <span class="m-index-master_distance">600 метров</span>
                                 <a href="#" class="m-index-master_feedback">Маршрут</a>
                             </div>
@@ -693,11 +687,11 @@
                             <div class="m-contacts_phone">
                                 <p class="m-contacts_block-text">Телеофн:</p>
                                 <div class="m-contacts_fhone-block">
-                                    <img src="img/footer_phone.png" alt="img">
+                                    <img src="img/phone_icon.png" class="m-contacts_fhone-img" alt="img">
                                     <span>+38 067 555 55 55</span>
                                 </div>
                                 <div class="m-contacts_fhone-block">
-                                    <img src="img/footer_phone.png" alt="img">
+                                    <img src="img/phone_icon.png" class="m-contacts_fhone-img" alt="img">
                                     <span>+38 067 555 55 55</span>
                                 </div>
                             </div>
@@ -707,28 +701,28 @@
                                     (Откроется диалог с мастером в выбранном мессенджере)
                                 </p>
                                 <div class="m-contacts_messengers-icons">
-                                    <div class="messenger__block viber">
+                                    <a href="#" class="messenger__block viber">
                                         <div class="icon_img"></div>
-                                    </div>
-                                    <div class="messenger__block fb">
+                                    </a>
+                                    <a href="#" class="messenger__block fb">
                                         <div class="icon_img"></div>
-                                    </div>
-                                    <div class="messenger__block telegram">
+                                    </a>
+                                    <a href="#" class="messenger__block telegram">
                                         <div class="icon_img"></div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="m-contacts_social-block">
                                 <p class="m-contacts_block-text">Соцсети:</p>
                                 <div class="m-contacts_social-info">
-                                    <div>
+                                    <a href="#" class="m-contacts_social-item">
                                         <img src="img/insta_icon.png" alt="img">
                                         <span>Instagram</span>
-                                    </div>
-                                    <div>
+                                    </a>
+                                    <a href="#" class="m-contacts_social-item">
                                         <img src="img/facebook_icon.png" alt="img">
                                         <span>Facebook</span>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -802,7 +796,7 @@
                                             </div>
                                             <div class="modal-body m-modal-body">
                                                 <div class="img-modal-body">
-                                                    <img src="img/modal_map_point.png" alt="img">
+                                                    <img src="img/map_point_red.png" class="img-modal-body_width" alt="img">
                                                 </div>
                                                 <div class="modal-body-text">
                                                     <span>Включите определение геопозиции, чтобы можно было увидеть мастеров поблизости и проложить к ним маршрут</span>
@@ -873,30 +867,30 @@
             <div class="m-find_block">
                 <a href="#" class="m-find_button">Найти мастера за 1 минуту</a>
                 <a href="#" class="m-info_search">
-                    <img src="img/info.png" alt="img">
+                    <img src="img/info.png" class="info-icon_width" alt="info_img">
                     <span class="m-info_text">Подробнее об услуге?</span>
                 </a>
             </div>
             <div class="m-contacts_block">
                 <p>Подписаться на Max Woman:</p>
                 <div class="m-social_icon">
-                    <a href="#"><img src="img/insta_icon.png" alt="img"></a>
-                    <a href="#"><img src="img/facebook_icon.png" alt="img"></a>
-                    <a href="#"><img src="img/footer_youtube.png" alt="img"></a>
-                    <a href="#"><img src="img/footer_telegram.png" alt="img"></a>
+                    <a href="#"><img src="img/insta_icon.png" class="footer__icon" alt="img"></a>
+                    <a href="#"><img src="img/facebook_icon.png" class="footer__icon" alt="img"></a>
+                    <a href="#"><img src="img/footer_youtube.png" class="footer__icon" alt="img"></a>
+                    <a href="#"><img src="img/footer_telegram.png" class="footer__icon" alt="img"></a>
                 </div>
                 <p>Связаться:</p>
                 <a href="#" class="m-footer_phone">
-                    <img src="img/footer_phone.png" alt="img">
+                    <img src="img/phone_icon.png" class="m-footer_phone-img" alt="img">
                     <span class="m-footer_color-phone">+38 099 555 55 55</span>
                 </a>
                 <div class="m-footer_messenger">
                     <a href="#" class="m-footer_phone">
-                        <img src="img/telegram_icon.png" alt="img">
+                        <img src="img/telegram_icon.png" class="m-footer_phone-img" alt="img">
                         <span>Telegram</span>
                     </a>
                     <a href="#" class="m-footer_phone">
-                        <img src="img/fb_mess.png" alt="img">
+                        <img src="img/fb_icon-footer.png" class="m-footer_phone-img" alt="img">
                         <span>FB Messenger</span>
                     </a>
                 </div>
