@@ -1215,6 +1215,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 
 .help-search__text {
     padding-left: 10px;
+    font-size: 16px;
 }
 
 .found-masters__map {
@@ -1283,9 +1284,24 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 }
 
 .main-page__title-wrap {
+    position: relative;
     min-height: 100vh;
     margin: 0 65px 50px;
     background: url('../img/main_bg.png') center no-repeat;
+}
+
+.main-page__title-wrap:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background:  url('../img/main_after_img.png') no-repeat;
+    background-size: cover;
+    width: 346px;
+    height: 94px;
+    margin-left: -173px;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
 }
 
 .main-page__title {
@@ -1305,14 +1321,14 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 150px;
+    margin: 0 180px;
     padding: 50px;
     background: rgb(255, 255, 255, 0.7);
     border-radius: 5px;
 }
 
 .main-page-select {
-    width: 250px;
+    width: 270px;
     margin-right: 50px;
     padding: 5px 15px;
     font-weight: 500;
@@ -1321,7 +1337,8 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 }
 
 .main-page__buton-send {
-    padding: 10px 60px;
+    min-width: 302px;
+    padding: 13px 60px;
     background: #ED4A43;
     text-transform: uppercase;
     color: white;
@@ -1402,7 +1419,7 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 
 .best-masters {
     flex-direction: column;
-    padding: 100px 0 200px;
+    padding: 100px 0;
     text-align: center;
     background: #F8F8F8;
 }
@@ -1436,6 +1453,10 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
     display: none;
     cursor: pointer;
     font-size: 18px;
+}
+
+.best-masters__hide-map:hover {
+    color: #ED4A43;
 }
 
 .best-masters__master-wrap {
@@ -1680,6 +1701,22 @@ label, a {
     color: #ED4A43;
 }
 
+/*--------------------best-masters__error-find------------------*/
+
+.best-masters__error-find {
+    display: none;
+    max-width: 700px;
+    margin: 150px auto;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.best-masters__error-find .help-search {
+    background: none;
+    border: none;
+}
+
 /*--------------------best-masters__hide-search------------------*/
 
 .best-masters__map-img {
@@ -1780,7 +1817,6 @@ label, a {
     margin: 0 auto;
     max-width: 1300px;
     padding: 100px;
-    background: #F8F8F8;
 }
 
 /*-------------------registration-block---------------*/
@@ -2247,6 +2283,56 @@ label, a {
     .main-quick-feedback {
         display: none;
     }
+}
+
+/*------------------------error-404--------------------*/
+
+.error_image {
+    height: 100%;
+    background: url('../img/error_404.png');
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.error_background {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid white;
+}
+
+.error_block {
+    margin: 120px auto;
+}
+
+.error_number {
+    font-weight: bold;
+    font-size: calc(36px + 4vw);
+    color: #ED4A43;
+}
+
+.error_title {
+    font-size: calc(16px + 2vw);
+}
+
+.error_btn {
+    display: inline-block;
+    margin-top: 80px;
+    padding: 15px 50px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+}
+
+.error_btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.error_form-block {
+    margin-top: 150px;
 }
 
 /*------------------------mobile-version------------------*/
