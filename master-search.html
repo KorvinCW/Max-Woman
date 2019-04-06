@@ -13,256 +13,476 @@
 </head>
 <body>
     <div class="wrapper">
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row header__wrapper">
-                <nav id="slide-out" class="side-nav">
-                    <ul>
-                        <li><a href="#">Журнал</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Войти</a></li>
-                        <li><a href="#">Регистрация</a></li>
-                    </ul>
-                </nav>
-                <nav class="col-5 hide-block">
-                    <ul class="header__list header__left-list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Журнал</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Новости</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Мероприятия</a>
-                        </li>
-                    </ul>
-                </nav>      
-                <a href="#" class="col-8 col-sm-10 col-lg-3 col-xl-2 header__logo">
-                    <img src="img/logo.png" class="header_logo-img" alt="Логотип">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row header__wrapper">
+                    <nav id="slide-out" class="side-nav">
+                        <ul>
+                            <li><a href="#">Журнал</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Войти</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="col-5 hide-block">
+                        <ul class="header__list header__left-list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Журнал</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Новости</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Мероприятия</a>
+                            </li>
+                        </ul>
+                    </nav>      
+                    <a href="#" class="col-8 col-sm-10 col-lg-3 col-xl-2 header__logo">
+                        <img src="img/logo.png" class="header_logo-img" alt="Логотип">
+                    </a>
+                    <nav class="col-4 col-xl-5 hide-block">
+                        <ul class="header__list header__right-list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Войти</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Регистрация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="col-4 col-sm-2 header__burger">
+                        <div class="wrapp">
+                            <button class="toggle-hamburger toggle-hamburger__animx" id="foo">
+                                <span>menu toggle</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main index-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 title-master-search">
+                        <span>Поиск мастера:</span>
+                        <span id="reset-search">Сбросить расширенный поиск</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="row wrap-search">
+                        <div class="col-md-6 col-xl-3">
+                            <p>Локация</p>
+                            <select id="select-city" class="custom-select master-search-select">
+                                <option value="Днепр">Днепр</option>
+                                <option value="Киев">Киев</option>
+                                <option value="Харьков">Харьков</option>
+                            </select>
+                            <select id="select-district" class="custom-select master-search-select">
+                                <option value="Днепровски р-н">Днепровски р-н</option>
+                                <option value="Киевский р-н">Киевский р-н</option>
+                                <option value="Харьковский р-н">Харьковский р-н</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <p>Услуга</p>
+                            <select id="select-service" class="custom-select master-search-select">
+                                <option value="Маникюр">Маникюр</option>
+                                <option value="Педикюр">Педикюр</option>
+                                <option value="Стрижка">Стрижка</option>
+                            </select>
+                            <select id="select-extended-service" class="custom-select master-search-select">
+                                <option value="Свадебный маникюр">Свадебный маникюр</option>
+                                <option value="Королевский маникюр">Королевский маникюр</option>
+                                <option value="Королевский педикюр">Королевский педикюр</option>
+                            </select>
+                        </div>
+                        <div id="price" class="col-md-6 col-xl-3 wrap-search__block-price">
+                            <p>Стоимость, UAH:</p>
+                            <div class="wrap-search__wrap-price">
+                                <span>от</span>
+                                <input type="text" id="min-price" class="wrap-search__price" name="" value="0">
+                                <span>до</span>
+                                <input type="text" id="max-price" class="wrap-search__price" name="" value="400">
+                            </div>
+                        </div>
+                        <div class="col-md-6 offset-xl-3 col-xl-3" id="extended-search">
+                            Расширенный поиск
+                        </div>
+                        <div id="distance-search" class="col-md-6 col-xl-3 wrap-search__distance">
+                            <p>Расстояние от Вас:</p>
+                            <div class="wrap-search__line-throught"></div>
+                            <div class="wrap-search__distance-block">                       
+                                <div>
+                                    <input type="radio" name="radius" id="radius1" class="wrap-search__input">
+                                    <label for="radius1" class="wrap-search__label search-label">150м</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radius" id="radius2" class="wrap-search__input">
+                                    <label for="radius2" class="wrap-search__label search-label">300м</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radius" id="radius3" class="wrap-search__input">
+                                    <label for="radius3" class="wrap-search__label search-label">500м</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radius" id="radius4" class="wrap-search__input">
+                                    <label for="radius4" class="wrap-search__label search-label-test">1км</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="radius" id="radius5" class="wrap-search__input" checked>
+                                    <label for="radius5" class="wrap-search__label last-search-label">любое</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search-checkbox" class="row wrap-search-checkbox">
+                        <div class="col-sm-6 col-md-3">
+                            <div>
+                                <input type="checkbox" id="answer1">
+                                <label for="answer1" class="search-master__lable">Только с отзывами</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div>
+                                <input type="checkbox" id="answer2">
+                                <label for="answer2"  class="search-master__lable">Только PRO</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div>
+                                <input type="checkbox" id="answer3">
+                                <label for="answer3"  class="search-master__lable">Мои избранные</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div>
+                                <input type="checkbox" id="answer4">
+                                <label for="answer4"  class="search-master__lable">Выезд на дом</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- error-find -->
+                <div class="best-masters__error-find">
+                    <p>По вашим критерям не найдено ниодного мастера.</p>
+                    <p>Измените критерии поиска или воспользуйтесь услугой "Найти мастера за 1 минуту"</p>
+                    <div class="help-search main-page__help-search">
+                        <a href="#" class="help-search__button">
+                            Найти мастера за 1 минуту 
+                        </a>
+                        <a href="#" class="help-search__info">
+                            <img src="img/info.png" class="info-icon_width" alt="info_img">
+                            <span class="help-search__text">Как это работает?</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- end -->
+                <div class="row found-masters">
+                    <div class="col-md-6">
+                        <p>Мастера которые удовлетворяют критериям поиска (<span>34</span>):</p>
+                        <div class="found-masters__block">
+                            <div class="found-masters__left">
+                                <img src="img/user_photo.png" class="found-masters__img" alt="photo">
+                                <a href="#" class="found-masters__open-master">Открыть профиль</a>
+                            </div>
+                            <div class="found-masters__description">
+                                <h3>Гагарина Елизавета</h3>
+                                <p>Висажист, парикмахер</p>
+                                <div class="found-masters__location">
+                                    <img src="img/location.png" alt="location">
+                                    <span class="found-masters__range">65 метров</span>
+                                    <span class="found-masters__street">ул.Ширшова, 15</span>
+                                </div>
+                                <div class="found-masters__feedback">
+                                    <img src="img/feedback.png" alt="feedback">
+                                    <span class="found-masters__feedback-text">Отзывы (<span>12</span>)</span>
+                                </div>
+                                <div class="found-masters__phone">
+                                    <img src="img/phone.png" alt="phone">
+                                    <span class="found-masters__phone-number">+38 063 555 55 55</span>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
+                            </div>
+                        </div>
+                        <div class="found-masters__block">
+                            <div class="found-masters__left">
+                                <img src="img/user_photo.png" class="found-masters__img" alt="photo">
+                                <a href="#" class="found-masters__open-master">Открыть профиль</a>
+                            </div>
+                            <div class="found-masters__description">
+                                <h3>Гагарина Елизавета</h3>
+                                <p>Висажист, парикмахер</p>
+                                <div class="found-masters__location">
+                                    <img src="img/location.png" alt="location">
+                                    <span class="found-masters__range">65 метров</span>
+                                    <span class="found-masters__street">ул.Ширшова, 15</span>
+                                </div>
+                                <div class="found-masters__feedback">
+                                    <img src="img/feedback.png" alt="feedback">
+                                    <span class="found-masters__feedback-text">Отзывы (<span>12</span>)</span>
+                                </div>
+                                <div class="found-masters__phone">
+                                    <img src="img/phone.png" alt="phone">
+                                    <span class="found-masters__phone-number">+38 063 555 55 55</span>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
+                            </div>
+                        </div>
+                        <div class="found-masters__block">
+                            <div class="found-masters__left">
+                                <img src="img/user_photo.png" class="found-masters__img" alt="photo">
+                                <a href="#" class="found-masters__open-master">Открыть профиль</a>
+                            </div>
+                            <div class="found-masters__description">
+                                <h3>Гагарина Елизавета</h3>
+                                <p>Висажист, парикмахер</p>
+                                <div class="found-masters__location">
+                                    <img src="img/location.png" alt="location">
+                                    <span class="found-masters__range">65 метров</span>
+                                    <span class="found-masters__street">ул.Ширшова, 15</span>
+                                </div>
+                                <div class="found-masters__feedback">
+                                    <img src="img/feedback.png" alt="feedback">
+                                    <span class="found-masters__feedback-text">Отзывы (<span>12</span>)</span>
+                                </div>
+                                <div class="found-masters__phone">
+                                    <img src="img/phone.png" alt="phone">
+                                    <span class="found-masters__phone-number">+38 063 555 55 55</span>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
+                            </div>
+                        </div>
+                        <div class="found-masters__navigator">
+                            <span>1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                        </div>
+                        <div class="found-masters__bottom-desc">
+                            <p>Вы можите не искать мастера вручную, а доверить это администрации Max Woman.</p>
+                            <p>За одну минуту укажите нужные критерии, а дальше мы сделаем все сами.</p>
+                            <div class="help-search">
+                                <a href="#" class="help-search__button">
+                                    Найти мастера за 1 минуту 
+                                </a>
+                                <a href="#" class="help-search__info">
+                                    <img src="img/info.png" class="info-icon_width" alt="info_img">
+                                    <span class="help-search__text">Как это работает?</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Мастера на карте <span>Днепра</span>:</p>
+                        <div class="found-masters__map-wrap">
+                            <img src="img/map2.png" class="found-masters__map" alt="map">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 wrap-search__distance">
+                                <p>Расстояние от Вас:</p>
+                                <form>
+                                    <div class="wrap-search__line-throught"></div>
+                                    <div class="wrap-search__distance-block">                       
+                                        <div>
+                                            <input type="radio" name="radius" id="map1" class="wrap-search__input">
+                                            <label for="map1" class="wrap-search__label search-label">150м</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radius" id="map2" class="wrap-search__input">
+                                            <label for="map2" class="wrap-search__label search-label">300м</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radius" id="map3" class="wrap-search__input">
+                                            <label for="map3" class="wrap-search__label search-label">500м</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radius" id="map4" class="wrap-search__input">
+                                            <label for="map4" class="wrap-search__label search-label-test">1км</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radius" id="map5" class="wrap-search__input" checked>
+                                            <label for="map5" class="wrap-search__label last-search-label">любое</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer d-footer">
+            <div class="container-fluid">
+                <div class="row footer__wrapper">
+                    <div class="col-6 col-md-3">
+                        <p>Подписаться:</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/insta_icon.png" class="footer__icon" alt="Instagramm">Instagram</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/facebook_icon.png" class="footer__icon" alt="Facebook">Facebook</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/footer_youtube.png" class="footer__icon" alt="Youtube">Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <p>Связаться:</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/phone_icon.png" class="footer__icon" alt="Phone">099 555 55 55</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/footer_telegram.png" class="footer__icon" alt="Telegram">Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer__block-search">
+                            <a href="#" class="footer__button-search">
+                                Найти мастера за 1 минуту 
+                            </a>
+                            <a href="#" class="footer__info-search">
+                                <img src="img/info.png" class="info-icon_width" alt="info_img">
+                                <span class="footer__info-text">Подробнее об этом?</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-line">Все права защищены. 2011 - 2019</div>
+        </footer>
+        <div class="mobile-version">
+            <div class="m-header_wrapper">		
+                <img src="img/burger.png" id="m-show-menu" class="m-header_wrapper-img" alt="img">
+                <a href="#" class="header-logo_pad">
+                    <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
                 </a>
-                <nav class="col-4 col-xl-5 hide-block">
-                    <ul class="header__list header__right-list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Войти</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Регистрация</a>
-                        </li>
+                <a href="#">
+                    <img src="img/settings.png" class="m-show_settings visible-block" alt="img">
+                </a>                    
+                <div id="m-slide-out" class="m-wrapp_slide">
+                    <div class="left-slide-block">
+                        <div class="m-header-menu_slide">
+                            <img src="img/delete.png" id="exit-menu">
+                            <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
+                            <div class="hidden-elem"></div>
+                        </div>
+                        <nav class="m-slide-navigation_menu">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Журнал</a></li>
+                                <li><a href="#">Мероприятия</a></li>
+                                <li class="m-active_section"><a href="#">Блог и новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="m-slide-registration_menu">
+                            <ul>
+                                <li><a href="#">Мой профиль</a></li>
+                                <li><a href="#">Настройки профиля</a></li>
+                                <li><a href="#">Избранные</a></li>
+                                <li><a href="#">Войти</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="m-slide-footer m-slide-footer_master">
+                            <a href="#">Найти мастера</a>
+                        </div>
+                        <div class="m-slide-footer m-slide-footer_top">
+                            <a href="#">Подняться в топ</a>
+                        </div>
+                    </div>
+                </div>	  
+            </div>
+            <main class="main m-search">
+                <div class="m-amount-masters">
+                    Найдено мастеров: <sapn>34</sapn>
+                </div>
+                <nav class="m-search-tab">
+                    <ul>
+                        <li id="m-search-active_list" class="m-search-tab_bg">Список</li>
+                        <li id="m-search-active_map">Карта</li>
                     </ul>
                 </nav>
-                <nav class="col-4 col-sm-2 header__burger">
-                    <div class="wrapp">
-                        <button class="toggle-hamburger toggle-hamburger__animx" id="foo">
-                            <span>menu toggle</span>
-                        </button>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main class="main index-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 title-master-search">
-                    <span>Поиск мастера:</span>
-                    <span id="reset-search">Сбросить расширенный поиск</span>
-                </div>
-            </div>
-            <form>
-                <div class="row wrap-search">
-                    <div class="col-md-6 col-xl-3">
-                        <p>Локация</p>
-                        <select id="select-city" class="custom-select master-search-select">
-                            <option value="Днепр">Днепр</option>
-                            <option value="Киев">Киев</option>
-                            <option value="Харьков">Харьков</option>
-                        </select>
-                        <select id="select-district" class="custom-select master-search-select">
-                            <option value="Днепровски р-н">Днепровски р-н</option>
-                            <option value="Киевский р-н">Киевский р-н</option>
-                            <option value="Харьковский р-н">Харьковский р-н</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <p>Услуга</p>
-                        <select id="select-service" class="custom-select master-search-select">
-                            <option value="Маникюр">Маникюр</option>
-                            <option value="Педикюр">Педикюр</option>
-                            <option value="Стрижка">Стрижка</option>
-                        </select>
-                        <select id="select-extended-service" class="custom-select master-search-select">
-                            <option value="Свадебный маникюр">Свадебный маникюр</option>
-                            <option value="Королевский маникюр">Королевский маникюр</option>
-                            <option value="Королевский педикюр">Королевский педикюр</option>
-                        </select>
-                    </div>
-                    <div id="price" class="col-md-6 col-xl-3 wrap-search__block-price">
-                        <p>Стоимость, UAH:</p>
-                        <div class="wrap-search__wrap-price">
-                            <span>от</span>
-                            <input type="text" id="min-price" class="wrap-search__price" name="" value="0">
-                            <span>до</span>
-                            <input type="text" id="max-price" class="wrap-search__price" name="" value="400">
+                <div id="m-list_block">
+                    <div class="m-search-master_block">
+                        <div class="m-search-master_photo">
+                            <img src="img/circle_photo.png" alt="img">
+                            <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
                         </div>
-                    </div>
-                    <div class="col-md-6 offset-xl-3 col-xl-3" id="extended-search">
-                        Расширенный поиск
-                    </div>
-                    <div id="distance-search" class="col-md-6 col-xl-3 wrap-search__distance">
-                        <p>Расстояние от Вас:</p>
-                        <div class="wrap-search__line-throught"></div>
-                        <div class="wrap-search__distance-block">                       
-                            <div>
-                                <input type="radio" name="radius" id="radius1" class="wrap-search__input">
-                                <label for="radius1" class="wrap-search__label search-label">150м</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="radius" id="radius2" class="wrap-search__input">
-                                <label for="radius2" class="wrap-search__label search-label">300м</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="radius" id="radius3" class="wrap-search__input">
-                                <label for="radius3" class="wrap-search__label search-label">500м</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="radius" id="radius4" class="wrap-search__input">
-                                <label for="radius4" class="wrap-search__label search-label-test">1км</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="radius" id="radius5" class="wrap-search__input" checked>
-                                <label for="radius5" class="wrap-search__label last-search-label">любое</label>
+                        <div class="m-search-master_info">
+                            <p class="m-search-master_name">Поликарпова Елизавета</p>
+                            <p class="m-search-master_profession">Визажист, парикмахер</p>
+                            <span class="m-search-master_street">ул. Ширшова, 15</span>
+                            <div class="m-search-master_dist-block">
+                                <img src="img/location.png" class="m-location_img" alt="img">
+                                <span class="m-search-master_distance">67 метров</span>
+                                <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="search-checkbox" class="row wrap-search-checkbox">
-                    <div class="col-sm-6 col-md-3">
-                        <div>
-                            <input type="checkbox" id="answer1">
-                            <label for="answer1" class="search-master__lable">Только с отзывами</label>
+                    <div class="m-search-master_block">
+                        <div class="m-search-master_photo">
+                            <img src="img/circle_photo.png" alt="img">
+                            <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
+                        </div>
+                        <div class="m-search-master_info">
+                            <p class="m-search-master_name">Поликарпова Елизавета</p>
+                            <p class="m-search-master_profession">Визажист, парикмахер</p>
+                            <span class="m-search-master_street">ул. Ширшова, 15</span>
+                            <div class="m-search-master_dist-block">
+                                <img src="img/location.png" class="m-location_img" alt="img">
+                                <span class="m-search-master_distance">67 метров</span>
+                                <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div>
-                            <input type="checkbox" id="answer2">
-                            <label for="answer2"  class="search-master__lable">Только PRO</label>
+                    <div class="m-search-master_block">
+                        <div class="m-search-master_photo">
+                            <img src="img/circle_photo.png" alt="img">
+                            <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
+                        </div>
+                        <div class="m-search-master_info">
+                            <p class="m-search-master_name">Поликарпова Елизавета</p>
+                            <p class="m-search-master_profession">Визажист, парикмахер</p>
+                            <span class="m-search-master_street">ул. Ширшова, 15</span>
+                            <div class="m-search-master_dist-block">
+                                <img src="img/location.png" class="m-location_img" alt="img">
+                                <span class="m-search-master_distance">67 метров</span>
+                                <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div>
-                            <input type="checkbox" id="answer3">
-                            <label for="answer3"  class="search-master__lable">Мои избранные</label>
+                    <div class="m-search-master_block">
+                        <div class="m-search-master_photo">
+                            <img src="img/circle_photo.png" alt="img">
+                            <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
+                        </div>
+                        <div class="m-search-master_info">
+                            <p class="m-search-master_name">Поликарпова Елизавета</p>
+                            <p class="m-search-master_profession">Визажист, парикмахер</p>
+                            <span class="m-search-master_street">ул. Ширшова, 15</span>
+                            <div class="m-search-master_dist-block">
+                                <img src="img/location.png" class="m-location_img" alt="img">
+                                <span class="m-search-master_distance">67 метров</span>
+                                <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div>
-                            <input type="checkbox" id="answer4">
-                            <label for="answer4"  class="search-master__lable">Выезд на дом</label>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <!-- error-find -->
-            <div class="best-masters__error-find">
-                <p>По вашим критерям не найдено ниодного мастера.</p>
-                <p>Измените критерии поиска или воспользуйтесь услугой "Найти мастера за 1 минуту"</p>
-                <div class="help-search main-page__help-search">
-                    <a href="#" class="help-search__button">
-                        Найти мастера за 1 минуту 
-                    </a>
-                    <a href="#" class="help-search__info">
-                        <img src="img/info.png" class="info-icon_width" alt="info_img">
-                        <span class="help-search__text">Как это работает?</span>
-                    </a>
-                </div>
-            </div>
-            <!-- end -->
-            <div class="row found-masters">
-                <div class="col-md-6">
-                    <p>Мастера которые удовлетворяют критериям поиска (<span>34</span>):</p>
-                    <div class="found-masters__block">
-                        <div class="found-masters__left">
-                            <img src="img/user_photo.png" class="found-masters__img" alt="photo">
-                            <a href="#" class="found-masters__open-master">Открыть профиль</a>
-                        </div>
-                        <div class="found-masters__description">
-                            <h3>Гагарина Елизавета</h3>
-                            <p>Висажист, парикмахер</p>
-                            <div class="found-masters__location">
-                                <img src="img/location.png" alt="location">
-                                <span class="found-masters__range">65 метров</span>
-                                <span class="found-masters__street">ул.Ширшова, 15</span>
-                            </div>
-                            <div class="found-masters__feedback">
-                                <img src="img/feedback.png" alt="feedback">
-                                <span class="found-masters__feedback-text">Отзывы (<span>12</span>)</span>
-                            </div>
-                            <div class="found-masters__phone">
-                                <img src="img/phone.png" alt="phone">
-                                <span class="found-masters__phone-number">+38 063 555 55 55</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
-                        </div>
-                    </div>
-
-                    <div class="found-masters__block">
-                        <div class="found-masters__left">
-                            <img src="img/user_photo.png" class="found-masters__img" alt="photo">
-                            <a href="#" class="found-masters__open-master">Открыть профиль</a>
-                        </div>
-                        <div class="found-masters__description">
-                            <h3>Гагарина Елизавета</h3>
-                            <p>Висажист, парикмахер</p>
-                            <div class="found-masters__location">
-                                <img src="img/location.png" alt="location">
-                                <span class="found-masters__range">65 метров</span>
-                                <span class="found-masters__street">ул.Ширшова, 15</span>
-                            </div>
-                            <div class="found-masters__feedback">
-                                <img src="img/feedback.png" alt="feedback">
-                                <span class="found-masters__feedback-text">Отзывы (<span>12</span>)</span>
-                            </div>
-                            <div class="found-masters__phone">
-                                <img src="img/phone.png" alt="phone">
-                                <span class="found-masters__phone-number">+38 063 555 55 55</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
-                        </div>
-                    </div>
-
-                    <div class="found-masters__block">
-                        <div class="found-masters__left">
-                            <img src="img/user_photo.png" class="found-masters__img" alt="photo">
-                            <a href="#" class="found-masters__open-master">Открыть профиль</a>
-                        </div>
-                        <div class="found-masters__description">
-                            <h3>Гагарина Елизавета</h3>
-                            <p>Висажист, парикмахер</p>
-                            <div class="found-masters__location">
-                                <img src="img/location.png" alt="location">
-                                <span class="found-masters__range">65 метров</span>
-                                <span class="found-masters__street">ул.Ширшова, 15</span>
-                            </div>
-                            <div class="found-masters__feedback">
-                                <img src="img/feedback.png" alt="feedback">
-                                <span class="found-masters__feedback-text">Отзывы (<span>12</span>)</span>
-                            </div>
-                            <div class="found-masters__phone">
-                                <img src="img/phone.png" alt="phone">
-                                <span class="found-masters__phone-number">+38 063 555 55 55</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
-                        </div>
-                    </div>
-                    <div class="found-masters__navigator">
+                    <div class="found-masters__navigator m-search_navihator">
                         <span>1</span>
                         <a href="#">2</a>
                         <a href="#">3</a>
@@ -270,275 +490,49 @@
                         <a href="#">5</a>
                         <a href="#">6</a>
                     </div>
-                    <div class="found-masters__bottom-desc">
-                        <p>Вы можите не искать мастера вручную, а доверить это администрации Max Woman.</p>
-                        <p>За одну минуту укажите нужные критерии, а дальше мы сделаем все сами.</p>
-                        <div class="help-search">
-                            <a href="#" class="help-search__button">
-                                Найти мастера за 1 минуту 
-                            </a>
-                            <a href="#" class="help-search__info">
-                                <img src="img/info.png" class="info-icon_width" alt="info_img">
-                                <span class="help-search__text">Как это работает?</span>
-                            </a>
+                </div>
+                <div id="m-map_block">
+                    <div class="m-main_distance wrap-search__distance">
+                        <p>Расстояние от Вас:</p>
+                        <div class="wrap-search__line-throught"></div>
+                        <div class="wrap-search__distance-block">                       
+                            <div>
+                                <input type="radio" name="radius" id="m-map1" class="wrap-search__input">
+                                <label for="m-map1" class="wrap-search__label search-label m-label">150м</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="m-map2" class="wrap-search__input">
+                                <label for="m-map2" class="wrap-search__label search-label m-label">300м</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="m-map3" class="wrap-search__input">
+                                <label for="m-map3" class="wrap-search__label search-label m-label">500м</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="m-map4" class="wrap-search__input">
+                                <label for="m-map4" class="wrap-search__label search-label-test m-label">1км</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="radius" id="m-map5" class="wrap-search__input" checked>
+                                <label for="m-map5" class="wrap-search__label last-search-label m-label">любое</label>
+                            </div>
                         </div>
                     </div>
+                    <img src="img/m_map.png" class="m-main_map-block" alt="map">
+                    <p class="m-main_map-desc">Нажмите на фото мастера для просмотра информации о нем</p>
                 </div>
-                <div class="col-md-6">
-                    <p>Мастера на карте <span>Днепра</span>:</p>
-                    <div class="found-masters__map-wrap">
-                        <img src="img/map2.png" class="found-masters__map" alt="map">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 wrap-search__distance">
-                            <p>Расстояние от Вас:</p>
-                            <form>
-                                <div class="wrap-search__line-throught"></div>
-                                <div class="wrap-search__distance-block">                       
-                                    <div>
-                                        <input type="radio" name="radius" id="map1" class="wrap-search__input">
-                                        <label for="map1" class="wrap-search__label search-label">150м</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="radius" id="map2" class="wrap-search__input">
-                                        <label for="map2" class="wrap-search__label search-label">300м</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="radius" id="map3" class="wrap-search__input">
-                                        <label for="map3" class="wrap-search__label search-label">500м</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="radius" id="map4" class="wrap-search__input">
-                                        <label for="map4" class="wrap-search__label search-label-test">1км</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="radius" id="map5" class="wrap-search__input" checked>
-                                        <label for="map5" class="wrap-search__label last-search-label">любое</label>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+            </main>
+            <footer class="m-footer">
+                <div class="m-find_block">
+                    <a href="#" class="m-find_button">Найти мастера за 1 минуту</a>
+                    <a href="#" class="m-info_search">
+                        <img src="img/info.png" class="info-icon_width" alt="info_img">
+                        <span class="m-info_text">Подробнее об услуге?</span>
+                    </a>
                 </div>
-            </div>
+            </footer>
         </div>
-    </main>
-
-    <footer class="footer d-footer">
-        <div class="container-fluid">
-            <div class="row footer__wrapper">
-                <div class="col-6 col-md-3">
-                    <p>Подписаться:</p>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/insta_icon.png" class="footer__icon" alt="Instagramm">Instagram</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/facebook_icon.png" class="footer__icon" alt="Facebook">Facebook</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/footer_youtube.png" class="footer__icon" alt="Youtube">Youtube</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3">
-                    <p>Связаться:</p>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/phone_icon.png" class="footer__icon" alt="Phone">099 555 55 55</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/footer_telegram.png" class="footer__icon" alt="Telegram">Telegram</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="footer__block-search">
-                        <a href="#" class="footer__button-search">
-                            Найти мастера за 1 минуту 
-                        </a>
-                        <a href="#" class="footer__info-search">
-                            <img src="img/info.png" class="info-icon_width" alt="info_img">
-                            <span class="footer__info-text">Подробнее об этом?</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-line">Все права защищены. 2011 - 2019</div>
-    </footer>
-    <div class="mobile-version">
-        <div class="m-header_wrapper">		
-            <img src="img/burger.png" id="m-show-menu" class="m-header_wrapper-img" alt="img">
-            <a href="#" class="header-logo_pad">
-                <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
-            </a>
-            <a href="#">
-                <img src="img/settings.png" class="m-show_settings visible-block" alt="img">
-            </a>                    
-            <div id="m-slide-out" class="m-wrapp_slide">
-                <div class="left-slide-block">
-                    <div class="m-header-menu_slide">
-                        <img src="img/delete.png" id="exit-menu">
-                        <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
-                        <div class="hidden-elem"></div>
-                    </div>
-                    <nav class="m-slide-navigation_menu">
-                        <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Журнал</a></li>
-                            <li><a href="#">Мероприятия</a></li>
-                            <li class="m-active_section"><a href="#">Блог и новости</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="m-slide-registration_menu">
-                        <ul>
-                            <li><a href="#">Мой профиль</a></li>
-                            <li><a href="#">Настройки профиля</a></li>
-                            <li><a href="#">Избранные</a></li>
-                            <li><a href="#">Войти</a></li>
-                            <li><a href="#">Регистрация</a></li>
-                            <li><a href="#">Выйти</a></li>
-                        </ul>
-                    </nav>
-                    <div class="m-slide-footer m-slide-footer_master">
-                        <a href="#">Найти мастера</a>
-                    </div>
-                    <div class="m-slide-footer m-slide-footer_top">
-                        <a href="#">Подняться в топ</a>
-                    </div>
-                </div>
-            </div>	  
-        </div>
-        <main class="main m-search">
-            <div class="m-amount-masters">
-                Найдено мастеров: <sapn>34</sapn>
-            </div>
-            <nav class="m-search-tab">
-                <ul>
-                    <li id="m-search-active_list" class="m-search-tab_bg">Список</li>
-                    <li id="m-search-active_map">Карта</li>
-                </ul>
-            </nav>
-            <div id="m-list_block">
-                <div class="m-search-master_block">
-                    <div class="m-search-master_photo">
-                        <img src="img/circle_photo.png" alt="img">
-                        <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
-                    </div>
-                    <div class="m-search-master_info">
-                        <p class="m-search-master_name">Поликарпова Елизавета</p>
-                        <p class="m-search-master_profession">Визажист, парикмахер</p>
-                        <span class="m-search-master_street">ул. Ширшова, 15</span>
-                        <div class="m-search-master_dist-block">
-                            <img src="img/location.png" class="m-location_img" alt="img">
-                            <span class="m-search-master_distance">67 метров</span>
-                            <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-search-master_block">
-                    <div class="m-search-master_photo">
-                        <img src="img/circle_photo.png" alt="img">
-                        <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
-                    </div>
-                    <div class="m-search-master_info">
-                        <p class="m-search-master_name">Поликарпова Елизавета</p>
-                        <p class="m-search-master_profession">Визажист, парикмахер</p>
-                        <span class="m-search-master_street">ул. Ширшова, 15</span>
-                        <div class="m-search-master_dist-block">
-                            <img src="img/location.png" class="m-location_img" alt="img">
-                            <span class="m-search-master_distance">67 метров</span>
-                            <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-search-master_block">
-                    <div class="m-search-master_photo">
-                        <img src="img/circle_photo.png" alt="img">
-                        <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
-                    </div>
-                    <div class="m-search-master_info">
-                        <p class="m-search-master_name">Поликарпова Елизавета</p>
-                        <p class="m-search-master_profession">Визажист, парикмахер</p>
-                        <span class="m-search-master_street">ул. Ширшова, 15</span>
-                        <div class="m-search-master_dist-block">
-                            <img src="img/location.png" class="m-location_img" alt="img">
-                            <span class="m-search-master_distance">67 метров</span>
-                            <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-search-master_block">
-                    <div class="m-search-master_photo">
-                        <img src="img/circle_photo.png" alt="img">
-                        <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
-                    </div>
-                    <div class="m-search-master_info">
-                        <p class="m-search-master_name">Поликарпова Елизавета</p>
-                        <p class="m-search-master_profession">Визажист, парикмахер</p>
-                        <span class="m-search-master_street">ул. Ширшова, 15</span>
-                        <div class="m-search-master_dist-block">
-                            <img src="img/location.png" class="m-location_img" alt="img">
-                            <span class="m-search-master_distance">67 метров</span>
-                            <a href="#" class="m-search-master_feedback">Отзывов (<span>12</span>)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="found-masters__navigator m-search_navihator">
-                    <span>1</span>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                </div>
-            </div>
-            <div id="m-map_block">
-                <div class="m-main_distance wrap-search__distance">
-                    <p>Расстояние от Вас:</p>
-                    <div class="wrap-search__line-throught"></div>
-                    <div class="wrap-search__distance-block">                       
-                        <div>
-                            <input type="radio" name="radius" id="m-map1" class="wrap-search__input">
-                            <label for="m-map1" class="wrap-search__label search-label m-label">150м</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="radius" id="m-map2" class="wrap-search__input">
-                            <label for="m-map2" class="wrap-search__label search-label m-label">300м</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="radius" id="m-map3" class="wrap-search__input">
-                            <label for="m-map3" class="wrap-search__label search-label m-label">500м</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="radius" id="m-map4" class="wrap-search__input">
-                            <label for="m-map4" class="wrap-search__label search-label-test m-label">1км</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="radius" id="m-map5" class="wrap-search__input" checked>
-                            <label for="m-map5" class="wrap-search__label last-search-label m-label">любое</label>
-                        </div>
-                    </div>
-                </div>
-                <img src="img/m_map.png" class="m-main_map-block" alt="map">
-                <p class="m-main_map-desc">Нажмите на фото мастера для просмотра информации о нем</p>
-            </div>
-        </main>
-        <footer class="m-footer">
-            <div class="m-find_block">
-                <a href="#" class="m-find_button">Найти мастера за 1 минуту</a>
-                <a href="#" class="m-info_search">
-                    <img src="img/info.png" class="info-icon_width" alt="info_img">
-                    <span class="m-info_text">Подробнее об услуге?</span>
-                </a>
-            </div>
-        </footer>
     </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

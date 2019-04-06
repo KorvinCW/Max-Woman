@@ -13,122 +13,623 @@
 </head>
 <body>
     <div class="wrapper">
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row header__wrapper">
-                <nav id="slide-out" class="side-nav">
-                    <ul>
-                        <li><a href="#">Журнал</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Войти</a></li>
-                        <li><a href="#">Регистрация</a></li>
-                    </ul>
-                </nav>
-                <nav class="col-5 hide-block">
-                    <ul class="header__list header__left-list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Журнал</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Новости</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Мероприятия</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="col-8 col-sm-10 col-lg-3 col-xl-2 header__logo">
-                    <img src="img/logo.png" class="header_logo-img" alt="Логотип">
-                </a>
-                <nav class="col-4 col-xl-5 hide-block">
-                    <ul class="header__list header__right-list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Войти</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Регистрация</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="col-4 col-sm-2 header__burger">
-                    <div class="wrapp">
-                        <button class="toggle-hamburger toggle-hamburger__animx" id="foo">
-                            <span>menu toggle</span>
-                        </button>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main class="main index-block">
-        <div class="container-fluid new-width">
-
-            <div class="row">
-                <div class="col-12 btn_back">
-                    <a href="#">
-                        <div class="arrow"></div>
-                        <span>Вернуться к поиску</span>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="master-block user">
-                        <img src="img/user_photo.png" class="user_photo" alt="Фото мастера">
-                        <div class="user_state">
-                            <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
-                        </div>
-                    </div>
-                    <div class="master-block user_phone">
-                        <div class="phone">
-                            <p>Телефон:</p>
-                            <div class="phone__number">+38 063 555 55 55</div>
-                        </div>
-                        <div class="messenger">
-                            <p>Месенджеры:</p>
-                            <div class="messenger__block viber">
-                                <div class="icon_img"></div>
-                                +38 063 555 55 55
-                            </div>
-                            <div class="messenger__block telegram">
-                                <div class="icon_img"></div>
-                                +38 063 555 55 55
-                            </div>
-                        </div>
-                    </div>
-                    <div class="master-block master-block-social">
-                        <p>Мастер в соц сетях:</p>
-                        <a href="#" class="messenger__block instagram">
-                            <img src="img/insta_icon.png" class="master-block-social_img" alt="insta_icon">
-                            <span>Instagram</span>
-                        </a>
-                        <a href="#" class="messenger__block facebook">
-                            <img src="img/facebook_icon.png" class="master-block-social_img" alt="facebook_icon">
-                            <span>Facebook</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="user_name">
-                        <h2>Гагарина Елена</h2>
-                        <span>Висажист, парикмахер</span>
-                    </div>
-                    <div id="tabs">
-                        <ul class="tablist">
-                            <li class="tab-link current" data-tab="tab-1">Портфолио</li>
-                            <li class="tab-link" data-tab="tab-2">Отзывы (<span>0</span>)</li>
-                            <li class="tab-link" data-tab="tab-3">Блог</li>
-                            <li class="tab-link" data-tab="tab-4">О себе</li>
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row header__wrapper">
+                    <nav id="slide-out" class="side-nav">
+                        <ul>
+                            <li><a href="#">Журнал</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Войти</a></li>
+                            <li><a href="#">Регистрация</a></li>
                         </ul>
-                        <div id="tab-1" class="tab-content current">
-                            <div class="block-price"> 
+                    </nav>
+                    <nav class="col-5 hide-block">
+                        <ul class="header__list header__left-list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Журнал</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Новости</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Мероприятия</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="col-8 col-sm-10 col-lg-3 col-xl-2 header__logo">
+                        <img src="img/logo.png" class="header_logo-img" alt="Логотип">
+                    </a>
+                    <nav class="col-4 col-xl-5 hide-block">
+                        <ul class="header__list header__right-list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Войти</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Регистрация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="col-4 col-sm-2 header__burger">
+                        <div class="wrapp">
+                            <button class="toggle-hamburger toggle-hamburger__animx" id="foo">
+                                <span>menu toggle</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main index-block">
+            <div class="container-fluid new-width">
+
+                <div class="row">
+                    <div class="col-12 btn_back">
+                        <a href="#">
+                            <div class="arrow"></div>
+                            <span>Вернуться к поиску</span>
+                        </a>
+                    </div>
+                </div>         
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="master-block user">
+                            <img src="img/user_photo.png" class="user_photo" alt="Фото мастера">
+                            <div class="user_state">
+                                <img src="img/pro_img.png" class="pro-image" alt="Статус пользователя">
+                            </div>
+                        </div>
+                        <div class="master-block user_phone">
+                            <div class="phone">
+                                <p>Телефон:</p>
+                                <div class="phone__number">+38 063 555 55 55</div>
+                            </div>
+                            <div class="messenger">
+                                <p>Месенджеры:</p>
+                                <div class="messenger__block viber">
+                                    <div class="icon_img"></div>
+                                    +38 063 555 55 55
+                                </div>
+                                <div class="messenger__block telegram">
+                                    <div class="icon_img"></div>
+                                    +38 063 555 55 55
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-block master-block-social">
+                            <p>Мастер в соц сетях:</p>
+                            <a href="#" class="messenger__block instagram">
+                                <img src="img/insta_icon.png" class="master-block-social_img" alt="insta_icon">
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="messenger__block facebook">
+                                <img src="img/facebook_icon.png" class="master-block-social_img" alt="facebook_icon">
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="user_name">
+                            <h2>Гагарина Елена</h2>
+                            <span>Висажист, парикмахер</span>
+                        </div>
+                        <div id="tabs">
+                            <ul class="tablist">
+                                <li class="tab-link current" data-tab="tab-1">Портфолио</li>
+                                <li class="tab-link" data-tab="tab-2">Отзывы (<span>0</span>)</li>
+                                <li class="tab-link" data-tab="tab-3">Блог</li>
+                                <li class="tab-link" data-tab="tab-4">О себе</li>
+                            </ul>
+                            <div id="tab-1" class="tab-content current">
+                                <div class="block-price"> 
+                                    <div class="block-price__item">
+                                        <p class="block-price__upper">Визаж</p>
+                                        <p class="block-price__upper">Цена, UAH</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Мужская</p>
+                                        <p>400</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Женская</p>
+                                        <p>700</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Меллирование</p>
+                                        <p>350</p>
+                                    </div>
+                                </div>
+                                <div class="block-price"> 
+                                    <div class="block-price__item">
+                                        <p class="block-price__upper">Парикмахерские услуги:</p>
+                                        <p class="block-price__upper">Цена, UAH</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Мужская</p>
+                                        <p>400</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Женская</p>
+                                        <p>700</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Меллирование</p>
+                                        <p>350</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Укладка</p>
+                                        <p>300-900</p>
+                                    </div>
+                                    <div class="block-price__item">
+                                        <p>Стрижка челки</p>
+                                        <p>400</p>
+                                    </div>
+                                </div>
+                                <nav class="gallery">
+                                    <h2>Фото работ:</h2>
+                                    <div class="row gallery__imges">
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt=""/></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_big.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_big.png" alt="" /></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
+                                        <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div id="tab-2" class="tab-content"></div>
+                            <div id="tab-3" class="tab-content">
+                                <div class="block-price">
+                                    <a href="#" class="news">
+                                        <img class="news__photo" src="img/img_news.png" alt="news photo">
+                                        <span class="block-price__news">
+                                            <p>Елена Гагарина</p>
+                                            <div class="text_bold">Как сохранить ногти молодыми и не
+                                                пожалеть об этом в 50 лет.
+                                            </div>
+                                            <div class="news__wrap">    
+                                                <div>
+                                                    <div class="news__viewing">
+                                                        <img src="img/view.png" alt="">
+                                                        <span>130</span>
+                                                    </div>
+                                                    <div class="news__viewing">
+                                                        <img src="img/comment.png" style="width: 20px;" alt="">
+                                                        <span>12</span>
+                                                    </div>
+                                                </div>
+                                                <p>12 Июня</p>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="block-price">
+                                    <a href="#" class="news">
+                                        <img class="news__photo" src="img/img_news.png" alt="news photo">
+                                        <span class="block-price__news">
+                                            <p>Елена Гагарина</p>
+                                            <div class="text_bold">Как сохранить ногти молодыми и не
+                                                пожалеть об этом в 50 лет.
+                                            </div>
+                                            <div class="news__wrap">    
+                                                <div>
+                                                    <div class="news__viewing">
+                                                        <img src="img/view.png" alt="">
+                                                        <span>130</span>
+                                                    </div>
+                                                    <div class="news__viewing">
+                                                        <img src="img/comment.png" style="width: 20px;" alt="">
+                                                        <span>12</span>
+                                                    </div>
+                                                </div>
+                                                <p>12 Июня</p>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="tab-4" class="tab-content">
+                                <div class="block-price">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                        illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
+                                        debitis corporis nemo quibusdam ipsum. Rem, nam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="master-block">
+                            <div class="city">
+                                <p>Днепр</p>
+                                <span>Центральный район</span>
+                            </div>
+                            <div class="map">
+                                <p>Мастер на карте:</p>
+                                <div class="map__block">
+                                    <img src="img/map.png" alt="map">
+                                </div>
+                                <!-- Button trigger modal 1 -->
+                                <button type="button" class="btn new-btn-style" data-toggle="modal" data-target="#geoPosition">
+                                    Включить геопозицию
+                                </button>                           
+                                <!-- Modal -->
+                                <div class="modal fade" id="geoPosition" tabindex="-1" role="dialog" aria-labelledby="geoPositionTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content new-modal-content">
+                                            <div class="modal-header new-modal-title">
+                                                <h5 class="modal-title" id="geoPositionTitle">Определение геопозиции</h5>
+                                            </div>
+                                            <div class="modal-body new-modal-body">
+                                                <div class="img-modal-body">
+                                                    <img src="img/map_point_red.png" class="img-modal-body_width" alt="img">
+                                                </div>
+                                                <div class="modal-body-text">
+                                                    <span>Включите определение геопозиции, чтобы можно было увидеть мастеров поблизости и проложить к ним маршрут</span>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer new-modal-footer">
+                                                <button type="button" class="btn new-btn-secondary new-btn-footer" data-dismiss="modal">Отмена</button>
+                                                <button type="button" class="btn new-btn-primary new-btn-footer">Включить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Button trigger modal 2 -->
+                                <button type="button" class="btn new-btn-style" data-toggle="modal" data-target="#route">
+                                    Проложить маршрут
+                                </button>                           
+                                <!-- Modal -->
+                                <div class="modal fade" id="route" tabindex="-1" role="dialog" aria-labelledby="routeTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-route" role="document">
+                                        <div class="modal-content route-modal-content">
+                                            <div class="modal-header route-modal-header">
+                                                <span class="route-title" id="routeTitle">Маршрут проложен</span>
+                                                <button type="button" class="route-close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">Закрыть карту</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-body-block">
+                                                    <div class="modal-body-left modal-body-pad">
+                                                        <span class="modal-desc-text">Ваш адрес</span>
+                                                        <img src="img/map_point_red.png" class="modal-body-left_img" alt="img">
+                                                        <input type="text" class="modal-input">
+                                                    </div>
+                                                    <div class="modal-body-right">27 минут</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-body-block">
+                                                    <div class="modal-body-left">
+                                                        <span class="modal-desc-text">Адрес мастера</span>
+                                                        <img src="img/map_point_blue.png" class="modal-body-left_img" alt="img">
+                                                        <input type="text" class="modal-input">
+                                                    </div>
+                                                    <select class="custom-select modal-body-select">
+                                                        <option value="">На машине</option>
+                                                        <option value="">Пешком</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer modal-footer-route">
+                                                <img src="img/big_map.png" class="map-route-modal" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-master">
+                            <a href="#">Добавить мастера в избранное</a>
+                        </div>
+                        <div class="master-block master-block_recommend">
+                            <p>Мастер рекомендует:</p>
+                            <a href="#" class="master-block__link">
+                                <div class="master-block__recommend">
+                                    <div class="circle-img">
+                                        <img src="img/circle_photo.png" alt="фото мастера">
+                                    </div>
+                                    <div>
+                                        <p>Ирина Бойко</p>
+                                        <span>Висажист, стилист</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="master-block__link">
+                                <div class="master-block__recommend">
+                                    <div class="circle-img">
+                                        <img src="img/circle_photo.png" alt="фото мастера">
+                                    </div>
+                                    <div>
+                                        <p>Анастасия Емельянова</p>
+                                        <span>Парикмахер</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row footer__wrapper">
+                    <div class="col-6 col-md-3">
+                        <p>Подписаться:</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/insta_icon.png" class="footer__icon" alt="Instagramm">Instagram</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/facebook_icon.png" class="footer__icon" alt="Facebook">Facebook</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/footer_youtube.png" class="footer__icon" alt="Youtube">Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <p>Связаться:</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/phone_icon.png" class="footer__icon" alt="Phone">099 555 55 55</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"><img src="img/footer_telegram.png" class="footer__icon" alt="Telegram">Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer__block-search">
+                            <a href="#" class="footer__button-search">
+                                Найти мастера за 1 минуту 
+                            </a>
+                            <a href="#" class="footer__info-search">
+                                <img src="img/info.png" class="info-icon_width" alt="info_img">
+                                <span class="footer__info-text">Подробнее об этом?</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-line">Все права защищены. 2011 - 2019</div>
+        </footer>
+        <div class="mobile-version">
+            <div class="m-header_wrapper">		
+                <img src="img/burger.png" id="m-show-menu" class="m-header_wrapper-img" alt="img">
+                <a href="#" class="header-logo_pad">
+                    <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
+                </a>
+                <a href="#">
+                    <img src="img/settings.png" class="m-show_settings" alt="img">
+                </a>                 
+                <div id="m-slide-out" class="m-wrapp_slide">
+                    <div class="left-slide-block">
+                        <div class="m-header-menu_slide">
+                            <img src="img/delete.png" id="exit-menu">
+                            <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
+                            <div class="hidden-elem"></div>
+                        </div>
+                        <nav class="m-slide-navigation_menu">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Журнал</a></li>
+                                <li><a href="#">Мероприятия</a></li>
+                                <li class="m-active_section"><a href="#">Блог и новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="m-slide-registration_menu">
+                            <ul>
+                                <li><a href="#">Мой профиль</a></li>
+                                <li><a href="#">Настройки профиля</a></li>
+                                <li><a href="#">Избранные</a></li>
+                                <li><a href="#">Войти</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="m-slide-footer m-slide-footer_master">
+                            <a href="#">Найти мастера</a>
+                        </div>
+                        <div class="m-slide-footer m-slide-footer_top">
+                            <a href="#">Подняться в топ</a>
+                        </div>
+                    </div>
+                </div>	  
+            </div>
+            <div class="m-btn_back">
+                <a href="#">
+                    <div class="arrow m-arrow"></div>
+                    <span>К поиску</span>
+                </a>
+            </div>
+            <main class="m-main-index">
+                <div id="m-tabs">
+                    <ul class="m-tablist">
+                        <li class="m-tab-link m-current" data-tab="m-tab-1">
+                            <img src="img/portfolio_tab.png" alt="img">
+                            <span>Портфолио</span>
+                        </li>
+                        <li class="m-tab-link" data-tab="m-tab-2">
+                            <img src="img/feedback.png" alt="img">
+                            <span>Отзывы</span>
+                        </li>
+                        <li class="m-tab-link" data-tab="m-tab-3">
+                            <img src="img/blog.png" alt="img">
+                            <span>Блог</span>
+                        </li>
+                    </ul>
+                    <div class="m-main-block_master">
+                        <p class="m-name-master">Поликарпова Елизавета</p>
+                        <div class="m-search-master_block">
+                            <div class="m-search-master_photo">
+                                <img src="img/circle_photo.png" alt="img">
+                                <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
+                            </div>
+                            <div class="m-index-master_info">
+                                <p class="m-search-master_profession">Визажист, парикмахер</p>
+                                <span class="m-index-master_street">ул. Ширшова, 15</span>
+                                <div class="m-index-master_phone">
+                                    <img src="img/phone_icon.png" class="m-index-master_img" alt="img">
+                                    <p><span>099 555 55 55</span> ; <span>067 555 55 55</span></p>
+                                </div>
+                                <div class="m-search-master_dist-block">
+                                    <img src="img/map_point_blue.png" class="m-location_img" alt="img">
+                                    <span class="m-index-master_distance">600 метров</span>
+                                    <a href="#" class="m-index-master_feedback">Маршрут</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="m-tab-1" class="m-tab-content current">   
+                        <div class="m-services-block">
+                            <p class="m-block_title">Услуги мастера</p>
+                            <div class="m-block_price"> 
                                 <div class="block-price__item">
-                                    <p class="block-price__upper">Визаж</p>
-                                    <p class="block-price__upper">Цена, UAH</p>
+                                    <p class="m-block-price__upper">Парикмахерские услуги:</p>
+                                    <p class="m-block-price__upper">UAH</p>
                                 </div>
                                 <div class="block-price__item">
                                     <p>Мужская</p>
@@ -143,11 +644,10 @@
                                     <p>350</p>
                                 </div>
                             </div>
-
-                            <div class="block-price"> 
+                            <div class="m-block_price"> 
                                 <div class="block-price__item">
-                                    <p class="block-price__upper">Парикмахерские услуги:</p>
-                                    <p class="block-price__upper">Цена, UAH</p>
+                                    <p class="m-block-price__upper">Услуги стилиста:</p>
+                                    <p class="m-block-price__upper">UAH</p>
                                 </div>
                                 <div class="block-price__item">
                                     <p>Мужская</p>
@@ -170,737 +670,226 @@
                                     <p>400</p>
                                 </div>
                             </div>
-
-                            <nav class="gallery">
-                                <h2>Фото работ:</h2>
-                                <div class="row gallery__imges">
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt=""/></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_big.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_big.png" alt="" /></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test2_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test2_img.png" alt="" /></a></div>
-                                    <div class="col-lg-4 col-md-6 gallery__imges-height"><a class="example-image-link" href="img/test_img.png" data-lightbox="example-set"><img class="example-image gallery__imges__img" src="img/test_img.png" alt="" /></a></div>
+                        </div>
+                        <div class="m-contacts_wrap">
+                            <p class="m-block_title">Контакты:</p>
+                            <div class="m-contacts_main-block">
+                                <div class="m-contacts_phone">
+                                    <p class="m-contacts_block-text">Телеофн:</p>
+                                    <div class="m-contacts_fhone-block">
+                                        <img src="img/phone_icon.png" class="m-contacts_fhone-img" alt="img">
+                                        <span>+38 067 555 55 55</span>
+                                    </div>
+                                    <div class="m-contacts_fhone-block">
+                                        <img src="img/phone_icon.png" class="m-contacts_fhone-img" alt="img">
+                                        <span>+38 067 555 55 55</span>
+                                    </div>
                                 </div>
-                            </nav>
-                        </div>
-                        <div id="tab-2" class="tab-content"></div>
-                        <div id="tab-3" class="tab-content">
-                            <div class="block-price">
-                                <a href="#" class="news">
-                                    <img class="news__photo" src="img/img_news.png" alt="news photo">
-                                    <span class="block-price__news">
-                                        <p>Елена Гагарина</p>
-                                        <div class="text_bold">Как сохранить ногти молодыми и не
-                                            пожалеть об этом в 50 лет.
-                                        </div>
-                                        <div class="news__wrap">    
-                                            <div>
-                                                <div class="news__viewing">
-                                                    <img src="img/view.png" alt="">
-                                                    <span>130</span>
-                                                </div>
-                                                <div class="news__viewing">
-                                                    <img src="img/comment.png" style="width: 20px;" alt="">
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                            <p>12 Июня</p>
-                                        </div>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="block-price">
-                                <a href="#" class="news">
-                                    <img class="news__photo" src="img/img_news.png" alt="news photo">
-                                    <span class="block-price__news">
-                                        <p>Елена Гагарина</p>
-                                        <div class="text_bold">Как сохранить ногти молодыми и не
-                                            пожалеть об этом в 50 лет.
-                                        </div>
-                                        <div class="news__wrap">    
-                                            <div>
-                                                <div class="news__viewing">
-                                                    <img src="img/view.png" alt="">
-                                                    <span>130</span>
-                                                </div>
-                                                <div class="news__viewing">
-                                                    <img src="img/comment.png" style="width: 20px;" alt="">
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                            <p>12 Июня</p>
-                                        </div>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="tab-4" class="tab-content">
-                            <div class="block-price">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                    illum iste distinctio eos quod, aut quae, omnis eius odio saepe molestias velit, 
-                                    debitis corporis nemo quibusdam ipsum. Rem, nam!
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="master-block">
-                        <div class="city">
-                            <p>Днепр</p>
-                            <span>Центральный район</span>
-                        </div>
-                        <div class="map">
-                            <p>Мастер на карте:</p>
-                            <div class="map__block">
-                                <img src="img/map.png" alt="map">
-                            </div>
-                            <!-- Button trigger modal 1 -->
-                            <button type="button" class="btn new-btn-style" data-toggle="modal" data-target="#geoPosition">
-                                Включить геопозицию
-                            </button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="geoPosition" tabindex="-1" role="dialog" aria-labelledby="geoPositionTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content new-modal-content">
-                                        <div class="modal-header new-modal-title">
-                                            <h5 class="modal-title" id="geoPositionTitle">Определение геопозиции</h5>
-                                        </div>
-                                        <div class="modal-body new-modal-body">
-                                            <div class="img-modal-body">
-                                                <img src="img/map_point_red.png" class="img-modal-body_width" alt="img">
-                                            </div>
-                                            <div class="modal-body-text">
-                                                <span>Включите определение геопозиции, чтобы можно было увидеть мастеров поблизости и проложить к ним маршрут</span>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer new-modal-footer">
-                                            <button type="button" class="btn new-btn-secondary new-btn-footer" data-dismiss="modal">Отмена</button>
-                                            <button type="button" class="btn new-btn-primary new-btn-footer">Включить</button>
-                                        </div>
+                                <div class="m-contacts_messengers-block">
+                                    <p class="m-contacts_block-text">Мессенжеры:</p>
+                                    <p class="m-contacts_messengers-description">
+                                        (Откроется диалог с мастером в выбранном мессенджере)
+                                    </p>
+                                    <div class="m-contacts_messengers-icons">
+                                        <a href="#" class="messenger__block viber">
+                                            <div class="icon_img"></div>
+                                        </a>
+                                        <a href="#" class="messenger__block fb">
+                                            <div class="icon_img"></div>
+                                        </a>
+                                        <a href="#" class="messenger__block telegram">
+                                            <div class="icon_img"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="m-contacts_social-block">
+                                    <p class="m-contacts_block-text">Соцсети:</p>
+                                    <div class="m-contacts_social-info">
+                                        <a href="#" class="m-contacts_social-item">
+                                            <img src="img/insta_icon.png" alt="img">
+                                            <span>Instagram</span>
+                                        </a>
+                                        <a href="#" class="m-contacts_social-item">
+                                            <img src="img/facebook_icon.png" alt="img">
+                                            <span>Facebook</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Button trigger modal 2 -->
-                            <button type="button" class="btn new-btn-style" data-toggle="modal" data-target="#route">
-                                Проложить маршрут
-                            </button>
-                            
-                            <!-- Modal -->
-                            <div class="modal fade" id="route" tabindex="-1" role="dialog" aria-labelledby="routeTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-route" role="document">
-                                    <div class="modal-content route-modal-content">
-                                        <div class="modal-header route-modal-header">
-                                            <span class="route-title" id="routeTitle">Маршрут проложен</span>
-                                            <button type="button" class="route-close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">Закрыть карту</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="modal-body-block">
-                                                <div class="modal-body-left modal-body-pad">
-                                                    <span class="modal-desc-text">Ваш адрес</span>
-                                                    <img src="img/map_point_red.png" class="modal-body-left_img" alt="img">
-                                                    <input type="text" class="modal-input">
+                        </div>
+                        <div class="m-about">
+                            <p class="m-block_title">О себе:</p>
+                            <div class="m-about_wrap">
+                                <div class="m-about_text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Distinctio beatae eos rerum tempore perferendis eligendi 
+                                    similique illo ea! Quas delectus quidem in molestias exercitationem 
+                                    consectetur impedit beatae amet facilis reprehenderit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Distinctio beatae eos rerum tempore perferendis eligendi 
+                                    similique illo ea! Quas delectus quidem in molestias exercitationem 
+                                    consectetur impedit beatae amet facilis reprehenderit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Distinctio beatae eos rerum tempore perferendis eligendi 
+                                    similique illo ea! Quas delectus quidem in molestias exercitationem 
+                                    consectetur impedit beatae amet facilis reprehenderit.
+                                </div>
+                                <p id="m-about_text-more">Читать полностью</p>
+                            </div>
+                        </div>
+                        <div class="m-recommend">
+                            <p class="m-block_title">Мастер рекомендует:</p>
+                            <div class="m-recommend_block">
+                                <a href="#" class="m-master-block__recommend">
+                                    <div class="circle-img">
+                                        <img src="img/circle_photo.png" alt="фото мастера">
+                                    </div>
+                                    <div>
+                                        <p class="m-recommend_name">Ирина Бойко</p>
+                                        <span>Висажист, стилист</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="m-master-block__recommend">
+                                    <div class="circle-img">
+                                        <img src="img/circle_photo.png" alt="фото мастера">
+                                    </div>
+                                    <div>
+                                        <p class="m-recommend_name">Анастасия Емельянова</p>
+                                        <span>Парикмахер</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m-user-map">
+                            <p class="m-block_title">Мастер на карте:</p>
+                            <div class="m-user-map_block">
+                                <div class="city">
+                                    <p>Днепр</p>
+                                    <span>Центральный район</span>
+                                </div>
+                                <div class="map">
+                                    <p>Мастер на карте:</p>
+                                    <div class="map__block">
+                                        <img src="img/map.png" alt="map">
+                                    </div>
+                                    <!-- Button trigger modal 1 -->
+                                    <button type="button" class="btn new-btn-style" data-toggle="modal" data-target="#m-geoPosition">
+                                        Включить геопозицию
+                                    </button>
+                                    <br>       
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="m-geoPosition" tabindex="-1" role="dialog" aria-labelledby="geoPositionTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content new-modal-content">
+                                                <div class="modal-header m-modal-title">
+                                                    <h5 class="modal-title" id="geoPositionTitle">Определение геопозиции</h5>
                                                 </div>
-                                                <div class="modal-body-right">27 минут</div>
+                                                <div class="modal-body m-modal-body">
+                                                    <div class="img-modal-body">
+                                                        <img src="img/map_point_red.png" class="img-modal-body_width" alt="img">
+                                                    </div>
+                                                    <div class="modal-body-text">
+                                                        <span>Включите определение геопозиции, чтобы можно было увидеть мастеров поблизости и проложить к ним маршрут</span>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer new-modal-footer">
+                                                    <button type="button" class="btn new-btn-secondary new-btn-footer" data-dismiss="modal">Отмена</button>
+                                                    <button type="button" class="btn new-btn-primary new-btn-footer">Включить</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="modal-body">
-                                            <div class="modal-body-block">
-                                                <div class="modal-body-left">
-                                                    <span class="modal-desc-text">Адрес мастера</span>
-                                                    <img src="img/map_point_blue.png" class="modal-body-left_img" alt="img">
-                                                    <input type="text" class="modal-input">
-                                                </div>
-                                                <select class="custom-select modal-body-select">
-                                                    <option value="">На машине</option>
-                                                    <option value="">Пешком</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer modal-footer-route">
-                                            <img src="img/big_map.png" class="map-route-modal" alt="img">
-                                        </div>
+                                    </div>
+                                    <a href="#" class="new-btn-style">
+                                        Проложить маршрут
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="m-contacts_fhone-block m-main-btn">
+                            Добавить в избранное
+                        </a>
+                    </div>
+                    <div id="m-tab-2" class="m-tab-content"></div>
+                    <div id="m-tab-3" class="m-tab-content">
+                        <div class="m-blog_wrap">
+                            <p class="m-block_title">Блог мастера:</p>
+                            <div class="m-blog_block">
+                                <img src="img/blog_img.png" class="m-blog_block-img" alt="img">
+                                <div class="m-blog_description">
+                                    <span class="m-blog_date">12 Июля</span>
+                                    <p class="m-blog_title-text">В Днепре прошел фестиваль небесных фонариков</p>
+                                    <p class="m-blog_news-text">
+                                        Ежегодный фестиваль небесных фонариков в этом году прошел при поддержке Max Woman.
+                                    </p>
+                                    <div class="news__viewing">
+                                        <img src="img/view.png" alt="">
+                                        <span>130</span>
+                                    </div>
+                                    <div class="news__viewing">
+                                        <img src="img/comment.png" style="width: 20px;" alt="">
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-blog_block">
+                                <img src="img/blog_img.png" class="m-blog_block-img" alt="img">
+                                <div class="m-blog_description">
+                                    <span class="m-blog_date">12 Июля</span>
+                                    <p class="m-blog_title-text">В Днепре прошел фестиваль небесных фонариков</p>
+                                    <p class="m-blog_news-text">
+                                        Ежегодный фестиваль небесных фонариков в этом году прошел при поддержке Max Woman.
+                                    </p>
+                                    <div class="news__viewing">
+                                        <img src="img/view.png" alt="">
+                                        <span>130</span>
+                                    </div>
+                                    <div class="news__viewing">
+                                        <img src="img/comment.png" style="width: 20px;" alt="">
+                                        <span>12</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="add-master">
-                        <a href="#">Добавить мастера в избранное</a>
-                    </div>
-                    <div class="master-block master-block_recommend">
-                        <p>Мастер рекомендует:</p>
-                        <a href="#" class="master-block__link">
-                            <div class="master-block__recommend">
-                                <div class="circle-img">
-                                    <img src="img/circle_photo.png" alt="фото мастера">
-                                </div>
-                                <div>
-                                    <p>Ирина Бойко</p>
-                                    <span>Висажист, стилист</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="master-block__link">
-                            <div class="master-block__recommend">
-                                <div class="circle-img">
-                                    <img src="img/circle_photo.png" alt="фото мастера">
-                                </div>
-                                <div>
-                                    <p>Анастасия Емельянова</p>
-                                    <span>Парикмахер</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row footer__wrapper">
-                <div class="col-6 col-md-3">
-                    <p>Подписаться:</p>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/insta_icon.png" class="footer__icon" alt="Instagramm">Instagram</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/facebook_icon.png" class="footer__icon" alt="Facebook">Facebook</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/footer_youtube.png" class="footer__icon" alt="Youtube">Youtube</a>
-                        </li>
-                    </ul>
+            </main>
+            <footer class="m-footer">
+                <div class="m-find_block">
+                    <a href="#" class="m-find_button">Найти мастера за 1 минуту</a>
+                    <a href="#" class="m-info_search">
+                        <img src="img/info.png" class="info-icon_width" alt="info_img">
+                        <span class="m-info_text">Подробнее об услуге?</span>
+                    </a>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="m-contacts_block">
+                    <p>Подписаться на Max Woman:</p>
+                    <div class="m-social_icon">
+                        <a href="#"><img src="img/insta_icon.png" class="footer__icon" alt="img"></a>
+                        <a href="#"><img src="img/facebook_icon.png" class="footer__icon" alt="img"></a>
+                        <a href="#"><img src="img/footer_youtube.png" class="footer__icon" alt="img"></a>
+                        <a href="#"><img src="img/footer_telegram.png" class="footer__icon" alt="img"></a>
+                    </div>
                     <p>Связаться:</p>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/phone_icon.png" class="footer__icon" alt="Phone">099 555 55 55</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link"><img src="img/footer_telegram.png" class="footer__icon" alt="Telegram">Telegram</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="footer__block-search">
-                        <a href="#" class="footer__button-search">
-                            Найти мастера за 1 минуту 
+                    <a href="#" class="m-footer_phone">
+                        <img src="img/phone_icon.png" class="m-footer_phone-img" alt="img">
+                        <span class="m-footer_color-phone">+38 099 555 55 55</span>
+                    </a>
+                    <div class="m-footer_messenger">
+                        <a href="#" class="m-footer_phone">
+                            <img src="img/telegram_icon.png" class="m-footer_phone-img" alt="img">
+                            <span>Telegram</span>
                         </a>
-                        <a href="#" class="footer__info-search">
-                            <img src="img/info.png" class="info-icon_width" alt="info_img">
-                            <span class="footer__info-text">Подробнее об этом?</span>
+                        <a href="#" class="m-footer_phone">
+                            <img src="img/fb_icon-footer.png" class="m-footer_phone-img" alt="img">
+                            <span>FB Messenger</span>
                         </a>
                     </div>
                 </div>
-            </div>
+                <div class="bottom-line m-footer_bottom-line">Все права защищены. 2011 - 2019</div>
+                <a href="#" class="m-footer_find-master">Связаться</a>
+            </footer>
         </div>
-        <div class="bottom-line">Все права защищены. 2011 - 2019</div>
-    </footer>
-
-    <div class="mobile-version">
-        <div class="m-header_wrapper">		
-            <img src="img/burger.png" id="m-show-menu" class="m-header_wrapper-img" alt="img">
-            <a href="#" class="header-logo_pad">
-                <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
-            </a>
-            <a href="#">
-                <img src="img/settings.png" class="m-show_settings" alt="img">
-            </a>                 
-            <div id="m-slide-out" class="m-wrapp_slide">
-                <div class="left-slide-block">
-                    <div class="m-header-menu_slide">
-                        <img src="img/delete.png" id="exit-menu">
-                        <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
-                        <div class="hidden-elem"></div>
-                    </div>
-                    <nav class="m-slide-navigation_menu">
-                        <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Журнал</a></li>
-                            <li><a href="#">Мероприятия</a></li>
-                            <li class="m-active_section"><a href="#">Блог и новости</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="m-slide-registration_menu">
-                        <ul>
-                            <li><a href="#">Мой профиль</a></li>
-                            <li><a href="#">Настройки профиля</a></li>
-                            <li><a href="#">Избранные</a></li>
-                            <li><a href="#">Войти</a></li>
-                            <li><a href="#">Регистрация</a></li>
-                            <li><a href="#">Выйти</a></li>
-                        </ul>
-                    </nav>
-                    <div class="m-slide-footer m-slide-footer_master">
-                        <a href="#">Найти мастера</a>
-                    </div>
-                    <div class="m-slide-footer m-slide-footer_top">
-                        <a href="#">Подняться в топ</a>
-                    </div>
-                </div>
-            </div>	  
-        </div>
-        <div class="m-btn_back">
-            <a href="#">
-                <div class="arrow m-arrow"></div>
-                <span>К поиску</span>
-            </a>
-        </div>
-        <main class="m-main-index">
-            <div id="m-tabs">
-                <ul class="m-tablist">
-                    <li class="m-tab-link m-current" data-tab="m-tab-1">
-                        <img src="img/portfolio_tab.png" alt="img">
-                        <span>Портфолио</span>
-                    </li>
-                    <li class="m-tab-link" data-tab="m-tab-2">
-                        <img src="img/feedback.png" alt="img">
-                        <span>Отзывы</span>
-                    </li>
-                    <li class="m-tab-link" data-tab="m-tab-3">
-                        <img src="img/blog.png" alt="img">
-                        <span>Блог</span>
-                    </li>
-                </ul>
-                <div class="m-main-block_master">
-                    <p class="m-name-master">Поликарпова Елизавета</p>
-                    <div class="m-search-master_block">
-                        <div class="m-search-master_photo">
-                            <img src="img/circle_photo.png" alt="img">
-                            <img src="img/pro_img.png" class="m-search_pro-img" alt="img">
-                        </div>
-                        <div class="m-index-master_info">
-                            <p class="m-search-master_profession">Визажист, парикмахер</p>
-                            <span class="m-index-master_street">ул. Ширшова, 15</span>
-                            <div class="m-index-master_phone">
-                                <img src="img/phone_icon.png" class="m-index-master_img" alt="img">
-                                <p><span>099 555 55 55</span> ; <span>067 555 55 55</span></p>
-                            </div>
-                            <div class="m-search-master_dist-block">
-                                <img src="img/map_point_blue.png" class="m-location_img" alt="img">
-                                <span class="m-index-master_distance">600 метров</span>
-                                <a href="#" class="m-index-master_feedback">Маршрут</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="m-tab-1" class="m-tab-content current">   
-                    <div class="m-services-block">
-                        <p class="m-block_title">Услуги мастера</p>
-                        <div class="m-block_price"> 
-                            <div class="block-price__item">
-                                <p class="m-block-price__upper">Парикмахерские услуги:</p>
-                                <p class="m-block-price__upper">UAH</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Мужская</p>
-                                <p>400</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Женская</p>
-                                <p>700</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Меллирование</p>
-                                <p>350</p>
-                            </div>
-                        </div>
-                        <div class="m-block_price"> 
-                            <div class="block-price__item">
-                                <p class="m-block-price__upper">Услуги стилиста:</p>
-                                <p class="m-block-price__upper">UAH</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Мужская</p>
-                                <p>400</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Женская</p>
-                                <p>700</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Меллирование</p>
-                                <p>350</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Укладка</p>
-                                <p>300-900</p>
-                            </div>
-                            <div class="block-price__item">
-                                <p>Стрижка челки</p>
-                                <p>400</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="m-contacts_wrap">
-                        <p class="m-block_title">Контакты:</p>
-                        <div class="m-contacts_main-block">
-                            <div class="m-contacts_phone">
-                                <p class="m-contacts_block-text">Телеофн:</p>
-                                <div class="m-contacts_fhone-block">
-                                    <img src="img/phone_icon.png" class="m-contacts_fhone-img" alt="img">
-                                    <span>+38 067 555 55 55</span>
-                                </div>
-                                <div class="m-contacts_fhone-block">
-                                    <img src="img/phone_icon.png" class="m-contacts_fhone-img" alt="img">
-                                    <span>+38 067 555 55 55</span>
-                                </div>
-                            </div>
-                            <div class="m-contacts_messengers-block">
-                                <p class="m-contacts_block-text">Мессенжеры:</p>
-                                <p class="m-contacts_messengers-description">
-                                    (Откроется диалог с мастером в выбранном мессенджере)
-                                </p>
-                                <div class="m-contacts_messengers-icons">
-                                    <a href="#" class="messenger__block viber">
-                                        <div class="icon_img"></div>
-                                    </a>
-                                    <a href="#" class="messenger__block fb">
-                                        <div class="icon_img"></div>
-                                    </a>
-                                    <a href="#" class="messenger__block telegram">
-                                        <div class="icon_img"></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="m-contacts_social-block">
-                                <p class="m-contacts_block-text">Соцсети:</p>
-                                <div class="m-contacts_social-info">
-                                    <a href="#" class="m-contacts_social-item">
-                                        <img src="img/insta_icon.png" alt="img">
-                                        <span>Instagram</span>
-                                    </a>
-                                    <a href="#" class="m-contacts_social-item">
-                                        <img src="img/facebook_icon.png" alt="img">
-                                        <span>Facebook</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="m-about">
-                        <p class="m-block_title">О себе:</p>
-                        <div class="m-about_wrap">
-                            <div class="m-about_text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Distinctio beatae eos rerum tempore perferendis eligendi 
-                                similique illo ea! Quas delectus quidem in molestias exercitationem 
-                                consectetur impedit beatae amet facilis reprehenderit.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Distinctio beatae eos rerum tempore perferendis eligendi 
-                                similique illo ea! Quas delectus quidem in molestias exercitationem 
-                                consectetur impedit beatae amet facilis reprehenderit.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Distinctio beatae eos rerum tempore perferendis eligendi 
-                                similique illo ea! Quas delectus quidem in molestias exercitationem 
-                                consectetur impedit beatae amet facilis reprehenderit.
-                            </div>
-                            <p id="m-about_text-more">Читать полностью</p>
-                        </div>
-                    </div>
-                    <div class="m-recommend">
-                        <p class="m-block_title">Мастер рекомендует:</p>
-                        <div class="m-recommend_block">
-                            <a href="#" class="m-master-block__recommend">
-                                <div class="circle-img">
-                                    <img src="img/circle_photo.png" alt="фото мастера">
-                                </div>
-                                <div>
-                                    <p class="m-recommend_name">Ирина Бойко</p>
-                                    <span>Висажист, стилист</span>
-                                </div>
-                            </a>
-                            <a href="#" class="m-master-block__recommend">
-                                <div class="circle-img">
-                                    <img src="img/circle_photo.png" alt="фото мастера">
-                                </div>
-                                <div>
-                                    <p class="m-recommend_name">Анастасия Емельянова</p>
-                                    <span>Парикмахер</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="m-user-map">
-                        <p class="m-block_title">Мастер на карте:</p>
-                        <div class="m-user-map_block">
-                            <div class="city">
-                                <p>Днепр</p>
-                                <span>Центральный район</span>
-                            </div>
-                            <div class="map">
-                                <p>Мастер на карте:</p>
-                                <div class="map__block">
-                                    <img src="img/map.png" alt="map">
-                                </div>
-                                <!-- Button trigger modal 1 -->
-                                <button type="button" class="btn new-btn-style" data-toggle="modal" data-target="#m-geoPosition">
-                                    Включить геопозицию
-                                </button>
-                                <br>       
-                                <!-- Modal -->
-                                <div class="modal fade" id="m-geoPosition" tabindex="-1" role="dialog" aria-labelledby="geoPositionTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content new-modal-content">
-                                            <div class="modal-header m-modal-title">
-                                                <h5 class="modal-title" id="geoPositionTitle">Определение геопозиции</h5>
-                                            </div>
-                                            <div class="modal-body m-modal-body">
-                                                <div class="img-modal-body">
-                                                    <img src="img/map_point_red.png" class="img-modal-body_width" alt="img">
-                                                </div>
-                                                <div class="modal-body-text">
-                                                    <span>Включите определение геопозиции, чтобы можно было увидеть мастеров поблизости и проложить к ним маршрут</span>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer new-modal-footer">
-                                                <button type="button" class="btn new-btn-secondary new-btn-footer" data-dismiss="modal">Отмена</button>
-                                                <button type="button" class="btn new-btn-primary new-btn-footer">Включить</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#" class="new-btn-style">
-                                    Проложить маршрут
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="m-contacts_fhone-block m-main-btn">
-                        Добавить в избранное
-                    </a>
-                </div>
-                <div id="m-tab-2" class="m-tab-content"></div>
-                <div id="m-tab-3" class="m-tab-content">
-                    <div class="m-blog_wrap">
-                        <p class="m-block_title">Блог мастера:</p>
-                        <div class="m-blog_block">
-                            <img src="img/blog_img.png" class="m-blog_block-img" alt="img">
-                            <div class="m-blog_description">
-                                <span class="m-blog_date">12 Июля</span>
-                                <p class="m-blog_title-text">В Днепре прошел фестиваль небесных фонариков</p>
-                                <p class="m-blog_news-text">
-                                    Ежегодный фестиваль небесных фонариков в этом году прошел при поддержке Max Woman.
-                                </p>
-                                <div class="news__viewing">
-                                    <img src="img/view.png" alt="">
-                                    <span>130</span>
-                                </div>
-                                <div class="news__viewing">
-                                    <img src="img/comment.png" style="width: 20px;" alt="">
-                                    <span>12</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="m-blog_block">
-                            <img src="img/blog_img.png" class="m-blog_block-img" alt="img">
-                            <div class="m-blog_description">
-                                <span class="m-blog_date">12 Июля</span>
-                                <p class="m-blog_title-text">В Днепре прошел фестиваль небесных фонариков</p>
-                                <p class="m-blog_news-text">
-                                    Ежегодный фестиваль небесных фонариков в этом году прошел при поддержке Max Woman.
-                                </p>
-                                <div class="news__viewing">
-                                    <img src="img/view.png" alt="">
-                                    <span>130</span>
-                                </div>
-                                <div class="news__viewing">
-                                    <img src="img/comment.png" style="width: 20px;" alt="">
-                                    <span>12</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="m-footer">
-            <div class="m-find_block">
-                <a href="#" class="m-find_button">Найти мастера за 1 минуту</a>
-                <a href="#" class="m-info_search">
-                    <img src="img/info.png" class="info-icon_width" alt="info_img">
-                    <span class="m-info_text">Подробнее об услуге?</span>
-                </a>
-            </div>
-            <div class="m-contacts_block">
-                <p>Подписаться на Max Woman:</p>
-                <div class="m-social_icon">
-                    <a href="#"><img src="img/insta_icon.png" class="footer__icon" alt="img"></a>
-                    <a href="#"><img src="img/facebook_icon.png" class="footer__icon" alt="img"></a>
-                    <a href="#"><img src="img/footer_youtube.png" class="footer__icon" alt="img"></a>
-                    <a href="#"><img src="img/footer_telegram.png" class="footer__icon" alt="img"></a>
-                </div>
-                <p>Связаться:</p>
-                <a href="#" class="m-footer_phone">
-                    <img src="img/phone_icon.png" class="m-footer_phone-img" alt="img">
-                    <span class="m-footer_color-phone">+38 099 555 55 55</span>
-                </a>
-                <div class="m-footer_messenger">
-                    <a href="#" class="m-footer_phone">
-                        <img src="img/telegram_icon.png" class="m-footer_phone-img" alt="img">
-                        <span>Telegram</span>
-                    </a>
-                    <a href="#" class="m-footer_phone">
-                        <img src="img/fb_icon-footer.png" class="m-footer_phone-img" alt="img">
-                        <span>FB Messenger</span>
-                    </a>
-                </div>
-            </div>
-            <div class="bottom-line m-footer_bottom-line">Все права защищены. 2011 - 2019</div>
-            <a href="#" class="m-footer_find-master">Связаться</a>
-        </footer>
     </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

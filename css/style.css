@@ -1106,7 +1106,8 @@ input[type="checkbox"]:checked ~ .search-master__lable::after {
 
 .found-masters__open-master:hover {
     text-decoration: none;
-    color: black;
+    background: #ED4A43;
+    color: white;
 }
 
 .found-masters__description {
@@ -2289,15 +2290,21 @@ label, a {
 
 .error_image {
     height: 100%;
-    background: url('../img/error_404.png');
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
+    background-image: url('../img/error_404.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .error_background {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
+}
+
+.main-error-block {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
     border-top: 1px solid white;
 }
 
@@ -2331,8 +2338,10 @@ label, a {
     text-decoration: none;
 }
 
-.error_form-block {
-    margin-top: 150px;
+@media screen and (max-width: 450px){
+    .hide-error_form {
+        display: none;
+    }
 }
 
 /*------------------------mobile-version------------------*/
@@ -3275,4 +3284,31 @@ label, a {
 
 .m-footer_quick-feedback {
     display: none;
+}
+
+/*-----------------------m-not-find-page--------------------*/
+
+.not-find_wrap {
+    height: 100%;
+    background: #F8F8F8;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid #F8F8F8;
+}
+
+.not-find_block {
+    max-width: 450px;
+    margin: 100px auto;
+    
+}
+
+.not-find_back-page {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 15px 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    color: white;
+    background: #ED4A43;
+    font-weight: bold;
 }
