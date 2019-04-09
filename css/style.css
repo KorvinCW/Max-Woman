@@ -1705,7 +1705,7 @@ label, a {
 /*--------------------best-masters__error-find------------------*/
 
 .best-masters__error-find {
-    display: none;
+    display: block;
     max-width: 700px;
     margin: 150px auto;
     font-size: 21px;
@@ -2288,16 +2288,24 @@ label, a {
 
 /*------------------------error-404--------------------*/
 
-.error_image {
+.error_bg-size {
+    width: 100%;
     height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+}
+
+.error_image {
     background-image: url('../img/error_404.png');
+    background-color: black;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .error_background {
-    height: 100%;
     background: rgba(0, 0, 0, 0.8);
 }
 
