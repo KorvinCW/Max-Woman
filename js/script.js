@@ -154,4 +154,28 @@ $(document).ready(function() {
 		$('#m-slide-out').css('left', '-100%');
 	}
 
+	
+
+	$('#m-news-active_news').click(activeNewsBlock);
+
+	$('#m-news-active_blog').click(activeBlogBlock);
+
+	function activeNewsBlock() {
+		if ($('#m-news-news_block').css('display') == 'none') {
+			$('#m-news-news_block').css('display', 'block');
+			$('#m-news-active_news').addClass('m-search-tab_bg');
+			$('#m-news-active_blog').removeClass('m-search-tab_bg');
+			$('#m-news-blog_block').css('display', 'none');
+		}
+	}
+
+	function activeBlogBlock() {
+		if ($('#m-news-blog_block').css('display') == 'none') {
+			$('#m-news-blog_block').css('display', 'block');
+			$('#m-news-active_blog').addClass('m-search-tab_bg');
+			$('#m-news-active_news').removeClass('m-search-tab_bg');
+			$('#m-news-news_block').css('display', 'none');
+		}
+	}
+
 });
