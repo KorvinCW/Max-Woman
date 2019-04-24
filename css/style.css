@@ -268,9 +268,9 @@ body {
 /*--------------------price------------------*/
 
 .block-price {
-    padding: 50px 65px;
+    padding: 50px;
     background-color: white;
-    margin-top: 35px;
+    margin-bottom: 35px;
     max-height: 95vh;
     overflow: auto;
     word-wrap: break-word;
@@ -2396,6 +2396,7 @@ label, a {
     flex-wrap: wrap;
     align-items: baseline;
     padding: 0 65px;
+    margin-bottom: 35px;
 }
 
 .left-news-title {
@@ -2449,6 +2450,56 @@ label, a {
     .left-news-text {
         padding: 0 15px;
     }
+}
+
+/*------------------------all-news-block------------------*/
+
+.news-center_wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.news-text_description {
+    font-size: 21px;
+}
+
+.news-text_description-img {
+    width: 100%;
+}
+
+.news-text_wrapper {
+    padding: 30px 40px;
+    background: white;
+}
+
+.news-time_block {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.news-date {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.news-text_title {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.news-social_block {
+    margin: 30px 0;
+    padding: 30px 40px;
+    font-size: 13px;
+}
+
+.news-social_icon-img {
+    width: 21px;
+    margin-right: 10px;
+}
+
+.news-other {
+    margin: 50px 0 65px;
 }
 
 /*------------------------mobile-version------------------*/
