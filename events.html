@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Max Woman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="lightbox-gallery/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/burger-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row header__wrapper">
+                    <nav id="slide-out" class="side-nav">
+                        <ul>
+                            <li><a href="#">Журнал</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Войти</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="col-5 hide-block">
+                        <ul class="header__list header__left-list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Журнал</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Новости</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Мероприятия</a>
+                            </li>
+                        </ul>
+                    </nav>      
+                    <a href="#" class="col-8 col-sm-10 col-lg-3 col-xl-2 header__logo">
+                        <img src="img/logo.png" class="header_logo-img" alt="Логотип">
+                    </a>
+                    <nav class="col-4 col-xl-5 hide-block">
+                        <ul class="header__list header__right-list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Войти</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Регистрация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="col-4 col-sm-2 header__burger">
+                        <div class="wrapp">
+                            <button class="toggle-hamburger toggle-hamburger__animx" id="foo">
+                                <span>menu toggle</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main index-block">
+            <div class="container-fluid">        
+                <div class="events-wrap">
+                    <div class="events_slider">
+                        <img src="img/event.png" class="events_slider__img" alt="img">
+                        <p class="events_slider__title">Beauty-Intensive: создание бизнеса и повышение прибыльности</p>
+                        <div class="events_slider__description">
+                            <ul>
+                                <li>Когда: <span>22 Ноября</span></li>
+                                <li>Город: <span>Киев</span></li>
+                                <li>Цена: <span>Бесплатно</span></li>
+                            </ul>
+                            <a href="#" class="events_slider__btn">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="events_offer-block">
+                        <p class="events_offer-title">Предлагаем ознакомиться с самыми интересными beauty-мероприятиями</p>
+                        <p class="events_offer-desc">На сайте <span class="events_offer-desc-span">event-beauty.ua</span> собраны все самые инетресные мероприятия для прфессионалов и клиентов.</p>
+                        <div class="events_offer-btn-block">
+                            <button class="events_offer-btn">Смотреть все мероприятия</button>
+                            <span class="events_offer-btn-text">Вы перейдете на сайт <span class="events_offer-desc-span">event-beauty.ua</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="mobile-version">
+            <div class="m-header_wrapper">		
+                <img src="img/burger.png" id="m-show-menu" class="m-header_wrapper-img" alt="img">
+                <a href="#" class="header-logo_pad">
+                    <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
+                </a>
+                <a href="#">
+                    <img src="img/settings.png" class="m-show_settings" alt="img">
+                </a>
+                <div id="m-slide-out" class="m-wrapp_slide">
+                    <div class="left-slide-block">
+                        <div class="m-header-menu_slide">
+                            <img src="img/delete.png" id="exit-menu">
+                            <img src="img/logo.png" class="m-header_logo-img" alt="Логотип">
+                            <div class="hidden-elem"></div>
+                        </div>
+                        <nav class="m-slide-navigation_menu">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Журнал</a></li>
+                                <li><a href="#">Мероприятия</a></li>
+                                <li class="m-active_section"><a href="#">Блог и новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="m-slide-registration_menu">
+                            <ul>
+                                <li><a href="#">Мой профиль</a></li>
+                                <li><a href="#">Настройки профиля</a></li>
+                                <li><a href="#">Избранные</a></li>
+                                <li><a href="#">Войти</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </nav>
+                        <div class="m-slide-footer m-slide-footer_master">
+                            <a href="#">Найти мастера</a>
+                        </div>
+                        <div class="m-slide-footer m-slide-footer_top">
+                            <a href="#">Подняться в топ</a>
+                        </div>
+                    </div>
+                    <div id="m-slide-hide" class="right-slide-block"></div>
+                </div>
+            </div>
+            <main class="main m-main_events">
+                <div class="m-news-top_slider">
+                    <p class="m-news-top_slider-text">Топ ивенты:</p>
+                    <img src="img/event.png" class="m-news-top_slider-img" alt="img">
+                    <div class="m-events_slider-wrap">
+                        <p class="m-events_slider-title">Beauty-Intensive: создание бизнеса и повышение прибыльности</p>
+                        <ul class="m-events_slider-desc">
+                            <li>Когда: <span>22 Ноября</span></li>
+                            <li>Город: <span>Киев</span></li>
+                            <li>Цена: <span>Бесплатно</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="m-events_btn">Смотреть все мероприятия</button>
+                <p class="m-event_btn-desc">Вы перейдете на сайт <span class="events_offer-desc-span">event-beauty.ua</span></p>
+            </main>
+            <footer class="m-footer">
+                <div class="m-find_block">
+                    <a href="#" class="m-find_button">Найти мастера за 1 минуту</a>
+                    <a href="#" class="m-info_search">
+                        <img src="img/info.png" class="info-icon_width" alt="info_img">
+                        <span class="m-info_text">Подробнее об услуге?</span>
+                    </a>
+                </div>
+                <div class="m-contacts_block">
+                    <p>Подписаться на Max Woman:</p>
+                    <div class="m-social_icon">
+                        <a href="#"><img src="img/insta_icon.png" class="footer__icon" alt="img"></a>
+                        <a href="#"><img src="img/facebook_icon.png" class="footer__icon" alt="img"></a>
+                        <a href="#"><img src="img/footer_youtube.png" class="footer__icon" alt="img"></a>
+                        <a href="#"><img src="img/footer_telegram.png" class="footer__icon" alt="img"></a>
+                    </div>
+                    <p>Связаться:</p>
+                    <a href="#" class="m-footer_phone">
+                        <img src="img/phone_icon.png" class="m-footer_phone-img" alt="img">
+                        <span class="m-footer_color-phone">+38 099 555 55 55</span>
+                    </a>
+                    <div class="m-footer_messenger">
+                        <a href="#" class="m-footer_phone">
+                            <img src="img/telegram_icon.png" class="m-footer_phone-img" alt="img">
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="m-footer_phone">
+                            <img src="img/fb_icon-footer.png" class="m-footer_phone-img" alt="img">
+                            <span>FB Messenger</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom-line m-footer_bottom-line">Все права защищены. 2011 - 2019</div>
+                <a href="#" class="m-footer_find-master">Связаться</a>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/burger.js"></script>
+    <script src="lightbox-gallery/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/lightbox-gallery.config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

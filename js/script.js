@@ -144,7 +144,7 @@ $(document).ready(function() {
 	}
 
 	$('#m-show-menu').click(showHeaderMenu);
-	$('#exit-menu').click(hideHeaderMenu);
+	$('#exit-menu, #m-slide-hide').click(hideHeaderMenu);
 	
 	function showHeaderMenu() {
 		$('#m-slide-out').css('left', '0');
