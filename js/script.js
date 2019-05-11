@@ -178,4 +178,16 @@ $(document).ready(function() {
 		}
 	}
 
+	$('.journal__button-wrap').mouseover(activeBgJournalBlock);
+	$('.journal__button-wrap').mouseout(returnBgJournalBlock);
+
+	function activeBgJournalBlock() {
+		$('.journal__block').css('background', 'url(img/journal-bg.jpg) no-repeat').css('background-size', 'cover');
+		$('.journal__text-block').css('visibility', 'hidden');
+	}
+
+	function returnBgJournalBlock() {
+		$('.journal__block').css('background', 'white');
+		$('.journal__text-block').css('visibility', 'visible');
+	}
 });
