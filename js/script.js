@@ -181,8 +181,8 @@ $(document).ready(function() {
 	$('.journal__button-wrap').mouseover(activeBgJournalBlock);
 	$('.journal__button-wrap').mouseout(returnBgJournalBlock);
 
-	function activeBgJournalBlock() {
-		$('.journal__block').css('background', 'url(img/journal-bg.jpg) no-repeat').css('background-size', 'cover');
+	function activeBgJournalBlock(event) {
+		$(`.journal__block-${event.currentTarget.dataset.number}`).css('background', 'url(img/journal-bg.jpg) no-repeat').css('background-size', 'cover');
 		$('.journal__text-block').css('visibility', 'hidden');
 	}
 
