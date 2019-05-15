@@ -3227,7 +3227,9 @@ label, a {
 
 .m-master_circle-img {
     width: 55px;
+    height: 55px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .m-search_pro-img {
